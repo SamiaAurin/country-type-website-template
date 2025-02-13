@@ -1,0 +1,773 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap');
+
+
+:root {
+  --primary-color: #286BB6 !important;
+  --secondary-color: #013b95 !important;
+  --black: #000;
+  --gray: #6d6d6d;
+  --white: #fff;
+  --var-font-family: "Poppins", serif;
+  --heading-font-family: "Clash Display", serif;
+}
+
+/************************** CSS Resets */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: var(--var-font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--black);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+code,
+pre {
+  font-family: var(--var-font-family);
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  resize: vertical;
+}
+.content-wrap .heading {
+  font-size: 1.625rem;
+  line-height: 32px;
+  font-weight: 600;
+  color: #1c302f;
+}
+
+body:has(.menu-cb:checked ~ .nav-links) {
+  overflow: hidden;
+}
+/***************************** Common CSS */
+.presto-container {
+    max-width: 1585px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.underline {
+  width: 111px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+/****************** Header CSS */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s linear;
+    z-index: 5;
+}
+  
+header nav {
+    transition: all 0.3s linear;
+    /*min-height: 150px;*/
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+  
+nav .logo-wrap {
+    /*position: absolute;
+    left: 50%;
+    //transform: translateX(-50%);*/
+}
+nav .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 246px;
+}
+header.scrolling {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+header.scrolling nav {
+    min-height: 90px;
+}
+  
+header.scrolling .site_name {
+    color: var(--primary-color);
+}
+  
+header.scrolling .menu-items .dropdown-label,
+header.scrolling .menu-items a {
+    color: #000;
+}
+  
+header.scrolling .burger-btn span {
+    background-color: #000;
+}
+  
+.header-container {
+    max-width: 1920px;
+    width: 100%;
+    height: 79px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    position: relative;
+}
+  
+.menu-items-search{
+    display: flex;
+    gap: 14px;
+}
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+    text-transform: uppercase;
+    gap: 4px;
+}
+
+.menu-items li{
+    padding: 24px 12px;
+}
+.search-icon{
+    padding: 24px 12px;
+}
+.menu-items .dropdown-label,
+.menu-items a {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+  
+/****************************************** Hero Section */
+.hero_section {
+    height: calc(-82px + 100vh);
+    position: relative;
+    /*background-color: #5b5b5b;*/
+  }
+  
+.banner-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    clip-path: inset(0);
+    max-width: 1920px;
+    margin: 0 auto;
+    z-index: 0;
+}
+  
+.home-banner {
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 30px;
+}
+  
+.slide-container {
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+  
+.slide-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    pointer-events: none;
+    z-index: 1;
+}
+  
+.slide-container::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+    z-index: 1;
+}
+  
+.slide-element-1,
+.slide-element-2,
+.slide-element-3,
+.slide-element-4,
+.slide-element-5,
+.slide-element-6,
+.slide-element-7,
+.slide-element-8 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+  
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.hero_content {
+    position: absolute;
+    bottom: 39px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 1073px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+  
+.hero_heading {
+    font-family: "Clash Display";
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 0 30px;
+    color: var(--white);
+    display: block;
+    margin: 0 auto;
+}
+  
+.hero-btn-explore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+  
+.btn-explore {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #3674B5 0%, #2F6096 100%);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 0px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* Slider Dot Container CSS */
+.slider-dot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px; /* Adjust if needed */
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Outer Circle */
+.slider-dot {
+    position: relative;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+/* Inner Circle */
+.slider-dot::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    /*top: 4px;
+    left: 4px; */
+}
+
+/* Active Dot (Filled Inner Circle) */
+.slider-dot.active{
+    border: 1px solid #286BB6;
+}
+.slider-dot.active::before {
+    background: #286BB6; 
+}
+
+
+/* Animation settings with equal timing */
+.slide-element-1 {
+    animation: fade 56s linear infinite;
+}
+.slide-element-2 {
+    animation: fade 56s linear infinite 7s;
+}
+.slide-element-3 {
+    animation: fade 56s linear infinite 14s;
+}
+.slide-element-4 {
+    animation: fade 56s linear infinite 21s;
+}
+.slide-element-5 {
+    animation: fade 56s linear infinite 28s;
+}
+.slide-element-6 {
+    animation: fade 56s linear infinite 35s;
+}
+.slide-element-7 {
+    animation: fade 56s linear infinite 42s;
+}
+.slide-element-8 {
+    animation: fade 56s linear infinite 49s;
+}
+  
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+  
+    4% {
+      opacity: 1;
+    }
+  
+    12% {
+      opacity: 1;
+    }
+  
+    16% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+}
+/********* About Section CSS Starts */
+.about_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 48px;
+}
+.about_section-row1
+{
+    margin: 10px;
+    text-align: center;
+}
+.about_section-row2,
+.about_section-row3{
+   margin: 48px;
+   text-align: center;
+}
+..about_section-row3{
+  display: flex;
+  align-items: center;
+}
+.about_section-row1-heading,
+.about_section-row2-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_section-row1-heading{
+  gap: 32px;
+}
+.about_section-row2-heading{
+  gap: 8px;
+}
+.about_section-row1-heading img{
+    width: 93px;
+    height: 35px;
+}
+.about_heading{
+    font-family: var(--heading-font-family);
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 52px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #2C2C2C;
+}
+.about_desc{
+    font-family: var(--var-font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27.2px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #2C2C2C;
+
+}
+/******************** Slider Img CSS */
+.carousel-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: 24px;
+}
+
+.carousel {
+  display: flex;
+  animation: slide 15s linear infinite;
+  gap: 20px;
+}
+
+.carousel img {
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.carousel img:nth-child(odd) {
+  width: 312px;
+  height: 470px;
+  border-radius: 8px;
+  margin: 24px;
+
+}
+
+.carousel img:nth-child(even) {
+  width: 312px;
+  height: 540px;
+  border-radius: 12px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Add a second copy of images for seamless loop */
+.carousel::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: inherit;
+}
+
+/******* Img Tiles CSS*/
+.img-tiles-container{
+  margin-top: 38px;
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 24px; 
+
+}
+.img-tiles{
+  max-width: 32%; /* Ensures 3 tiles in a row */
+  flex: 1;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+/* Slider Container */
+.slider-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Slider Images */
+.slider-image {
+  display: none;
+  width: 100%;
+  height: 348px;  
+  border-radius: 12px;
+}
+.slider-image:first-child {
+  display: block;
+}
+.slider-arrows-container {
+  position: absolute;
+  top: 142px; /* Position arrows based on Figma */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Ensures 360px gap */
+}
+.tiles-icons {
+  top: 0;
+  right: 0;
+  height: 35px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 8px 8px;
+  position: absolute;
+  border: 0.8px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  background: #0000004D;
+  box-shadow: 0px 1px 4px 0px #19213D14;
+
+}
+.fav-icon img{
+  width: 16px;
+  height: 16px;
+  top: 10px;
+  left: 10px;
+  
+}
+/* Slider Navigation Arrows */
+.slider-arrow {
+  position: absolute;
+  top: 5%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 42.67px;
+  color: white;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+  background: #0000004D;
+
+
+}
+.slider-arrow::before {
+  font-size: 13px; /* Match Figma */
+  font-weight: bold;
+  
+  width: 6.5px; /* Arrow width */
+  height: 13px; /* Arrow height */
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Previous Button */
+.slider-left {
+  left: 0;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+/* Next Button */
+.slider-right {
+  right: 0;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+
+.img-name-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 269px;
+  left: 150px;
+}
+.img-name{
+  font-family: var(--var-font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.btn-view-more{
+  visibility: hidden;
+  
+}
+.slide-container:hover .btn-view-more {
+  visibility: visible;
+  width: 115px;
+  height: 39px;
+  gap: 10px;
+  border-radius: 38px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  background: linear-gradient(90deg, rgba(54, 116, 181, 0.9) 0%, rgba(47, 96, 150, 0.9) 100%);
+  box-shadow: 0px 2px 4px 0px #00000059;
+  color: #FFFFFF;
+  font-family: var(--var-font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0%;
+}
+
+/* Dots (Indicators) */
+.slider-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.slider-dot2 {
+  width: 8px;
+  height: 8px;
+
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slider-dot2:hover {
+  background: white;
+}
+
+.slider-dot2.active {
+  background: var(--primary-color);
+}
+.link_btn {
+  width: 164;
+  height: 27px;
+  font-family: var(--var-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  letter-spacing: 0%;
+}
+.link-arrow{
+  width: 16px;
+height: 16;
+
+top: 12.74px;
+left: 5.3px;
+
+
+}
+/********* About Section CSS Ends */
