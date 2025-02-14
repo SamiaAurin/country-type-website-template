@@ -1,0 +1,221 @@
+.property-tiles-container{
+    margin-top: 150px;
+}
+.property-tiles{
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(0,0,0,5%);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 9px rgba(0,0,0,8%);
+}
+
+.property-tiles .tiles-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0 8px;
+
+    .fav-icon{
+        z-index: 100;
+        border-radius: 50%;
+        background-color: rgba(183, 186, 197, 0.4);
+        border: 1px solid rgba(222, 222, 222, .4);
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 36px;
+        margin: 0 5px;
+    }
+}
+
+.property-tiles .tiles-img{
+    height: 1px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%;
+    background-color: #e7e6e6;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    
+}
+.property-tiles .tiles-img img {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    object-fit: cover;
+}
+
+.property-tiles .listing-price{
+    bottom: 8px;
+    font-weight: 600;
+    line-height: 14px;
+    height: 30px;
+    left: 8px;
+    min-width: 43px;
+    padding: 8px 10px;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 4px;
+    text-shadow: none;
+    font-size: 14px;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: absolute;
+    z-index: 100;
+}
+
+.property-tiles .tiles-details {
+    padding: 5px 15px 0;
+  
+}
+
+.property-tiles .info {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    height: 25px
+}
+
+.property-tiles .rating{
+    overflow: hidden;
+    margin-bottom: 0;
+    display: flex;
+    gap: 0;
+    position: relative;
+    top: -1px;
+    color: #ffc107;
+}
+
+.property-tiles .divider{
+    font-size: 1rem;
+    position: relative;
+    color: #757575;
+}
+
+.property-tiles .rating-review {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .reviews {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    i{
+        color: #013573;
+    }
+
+    .rating-num{
+        position: relative;
+        font-size: 14px;
+        color: #003970;
+        font-weight: 700;
+    }
+    .review-num{
+        color: #5f5f5f;
+        font-weight: 700;
+        font-size: 11px;
+    }
+}
+
+.property-tiles .property-type {
+    padding-left: 10px;
+    font-size: .6875rem;
+    color: #414141;
+}
+
+.property-tiles .title a {
+    color: #393b44;
+    display: flex;
+    font-size: .8125rem;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -.02em;
+    text-decoration: none;
+   
+}
+.property-tiles .tiles-details ul {
+    margin: 0;
+    padding: 0
+}
+
+.property-tiles .tiles-details ul li {
+    list-style: none;
+    padding: 0;
+    display: inline;
+    font-size: .6875rem
+}
+
+.property-tiles .tiles-details .info ul li,
+.property-tiles .tiles-details .info ul li a {
+    color: #103076
+}
+.property-tiles .amenities {
+    padding: 0;
+    height: 21px;
+    margin: 0
+}
+
+.property-tiles .amenities ul {
+    padding: 0
+}
+
+.property-tiles .amenities ul li {
+    padding: 0;
+    display: inline;
+    font-size: .6875rem
+}
+.property-tiles .amenities ul li::after {
+    content: "•";
+    width: 15px;
+    display: inline-block;
+    text-align: center;
+}
+.property-tiles .amenities ul li:last-child::after {
+    content: "";
+}
+
+.tiles-btn{
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: -.5rem;
+    cursor: pointer;
+}
+
+.view{
+    background-color: #00cd92;
+    border-radius: 5px;
+    padding: 0 5px;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+        font-size: .938rem;
+        color: #fff;
+        font-weight: 700;
+        padding: 0 2px;
+        
+    }
+}
