@@ -1156,3 +1156,85 @@ header.scrolling .burger-btn span {
 }
 
 /****** Places To Go CSS ENDS */
+/****** Best Cities To Visit CSS Starts */
+.bestcities_section {
+  width: 100%;
+  margin: 38px;
+  padding: 20px;
+}
+.bestcities-heading-slidercontrols{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bestcities_title{
+  font-family: var(--var-font-family);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #2C2C2C;
+
+}
+.slidercontrols {
+  display: flex;
+  gap: 28px;
+}
+.slider-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.slider-btn svg {
+  width: 24px;
+  height: 24px;
+}
+.bestcities-card-container{
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+.city-card{
+  display: flex;
+  flex-direction: column;
+  width: 311px;
+  height: 587px;
+  
+}
+.city-img img{
+  width: 311px;
+  height: 540px;
+  border-radius: 12px;
+}
+
+.city-info{
+  display: flex;
+  width: 311px;
+  height: 35px;
+  margin-top: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+.link-arrow{
+  width: 35px;
+  height: 35px;
+  border-radius: 19px;
+  background: #C1D8F2;
+}
+.link-arrow img{
+  width: 13px;
+  height: 13px;
+  margin-top: 11px;
+  margin-left: 11px;
+  border-width: 1.38px;
+}
