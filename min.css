@@ -165,6 +165,7 @@ nav .logo-wrap {
 header.scrolling {
     background-color: var(--white);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #000;
 }
   
 header.scrolling nav {
@@ -685,8 +686,8 @@ header.scrolling .burger-btn span {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 269px;
-  left: 150px;
+  top: 80%;
+  left: 25%;
 }
 .img-name{
   font-family: var(--var-font-family);
@@ -699,10 +700,10 @@ header.scrolling .burger-btn span {
 }
 .btn-view-more{
   visibility: hidden;
-  
 }
-.slide-container:hover .btn-view-more {
+.slider-container:hover .btn-view-more {
   visibility: visible;
+  position: absolute;
   width: 115px;
   height: 39px;
   gap: 10px;
@@ -1222,13 +1223,13 @@ header.scrolling .burger-btn span {
   align-items: center;
   justify-content: space-between;
 }
-.link-arrow{
+.link-arrow2{
   width: 35px;
   height: 35px;
   border-radius: 19px;
   background: #C1D8F2;
 }
-.link-arrow img{
+.link-arrow2 img{
   width: 13px;
   height: 13px;
   margin-top: 11px;
