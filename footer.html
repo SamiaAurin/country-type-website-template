@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.max-container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.footer a,.footer a:hover,.footer ul li,.footer ul li:hover {
+    color: #fff
+}
+
+.footer {
+    background-color: #7ca8d5;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 650px;
+    background-size: 100%;
+    padding-top: 0;
+    position: relative
+}
+
+.footer-social-link svg {
+    height: 22px;
+    width: 22px
+}
+
+.footer-menu-list {
+    margin-bottom: 0;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 53px
+}
+.footer-menu-list {
+    margin: 0 0 16px;
+}
+.footer-menu-list.weddings li {
+    max-width: 307px
+}
+
+.footer-container {
+    padding: 80px 80px 0
+}
+
+.footer-menu-title {
+    color: #fff;
+    font-family: var(--var-font-family);
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: .18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin: 0 0 25px
+}
+
+.custom-currency .select-wrap .default-option {
+    border-color: #fff;
+    border-radius: 6px
+}
+
+.custom-currency .select-wrap .default-option .option p {
+    font-size: .875rem;
+    margin: 9px 0
+}
+
+.custom-currency .select-wrap .default-option:before {
+    border-color: transparent transparent #fff #fff;
+    border-width: 1px;
+    height: 7px;
+    margin-top: -6px;
+    right: 20px;
+    width: 7px
+}
+
+.footer .select-wrap .select-ul li {
+    background-color: #e8f1f7;
+    cursor: pointer;
+    padding: 8px 16px
+}
+
+.footer .select-wrap .select-ul li:hover {
+    background-color: #fff
+}
+
+.footer-menu-list li {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 0
+}
+
+.footer .footer-site-map {
+    padding: 30px 0 0;
+    font-weight: 500
+}
+
+.footer .footer-site-map li {
+    margin: 0 5px 0 0;
+    letter-spacing: .015625rem;
+    color: #fff
+}
+
+.footer .footer-site-map li a {
+    font-weight: 500;
+    font-size: .875rem
+}
+
+.custom-currency .select-wrap .select-ul {
+    bottom: 50px;
+    top: 100%;
+    width: 100%
+}
+
+.footer.webp-img {
+    background-image: var(--site-common-footer-webp-img);
+}
+
+.footer.jpg-img {
+    background-image: var(--site-common-footer-jpg-img)
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 92px;
+    position: relative;
+    z-index: 1
+}
+
+.footer-wrapper>div:nth-of-type(1) {
+    max-width: 431px
+}
+
+.footer-wrapper>div:nth-of-type(2) {
+    max-width: 663px
+}
+
+.footer-wrapper .footer-menu hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 1em 0;
+    padding: 0
+}
+
+.footer-left {
+    max-width: 765px;
+    flex-grow: 1
+}
+
+.footer-links {
+    position: relative;
+    justify-content: space-between
+}
+
+.footer-menu:nth-child(3) {
+    width: 170px
+}
+
+.footer-socials {
+    margin-left: -5px
+}
+
+.footer-socials ul {
+    align-items: center;
+    display: flex;
+    height: 23px;
+    gap: 49px
+}
+
+.inline-list li:last-child {
+    padding-left: 3px
+}
+
+.footer-dd {
+    display: flex;
+    padding: 28px 0 34px;
+    gap: 0 12px
+}
+.nav-link, .nav-link:hover {
+    color: #fff;
+    cursor: pointer;
+}
+.custom-currency .select-wrap {
+    width: 230px
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.custom-currency .select-wrap.active {
+    z-index: 3
+}
+
+.gray-bg {
+    background-color: #f4f6f8
+}
+.powered-block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    line-height: 0;
+}
+.powered-text {
+    color: #fff;
+    line-height: 1.465
+}
+
+.footer-copyright-text {
+    color: #fff;
+    font-size: .875rem;
+    padding-top: 19px;
+    line-height: 1.434
+}
+
+.footer-mobile-buttons {
+    display: none;
+    z-index: 1;
+    gap: .649rem;
+    position: fixed;
+    right: 15px;
+    top: 509px
+}
+
+.footer-mobile-buttons button {
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    display: flex;
+    height: 3.77rem;
+    justify-content: center;
+    width: 3.77rem
+}
+
+.footer-mobile-buttons button:first-child {
+    background-color: #013b95;
+    padding-bottom: 5px
+}
+
+.footer-mobile-buttons button:last-child {
+    background-color: #e2220e;
+    padding-bottom: 3px;
+    padding-right: 5px
+}
+
+.powered-logo {
+    height: 46px
+}
+.custom-currency .select-wrap .default-option {
+    border-color: #fff;
+    border-radius: 6px;
+}
+</style>
+</head>
+<body>
+    <div class="footer max-container webp-img" id="footer">
+        <div class="footer-container">
+            <div class="footer-wrapper flex">
+                <div class="footer-menu">
+                    <h4 class="footer-menu-title m-0">Best Wedding destinations</h4>
+                    <hr>
+                    <ul class="footer-menu-list p-0">
+                        <li class="ellipsis">
+                            <a href="/all/italy/tuscany">Tuscany, Italy</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/usa/california/napa-valley">Napa Valley, California, USA</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/greece/south-aegean/santorini">Santorini, Greece</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/mexico/quintana-roo/cancun">Cancun, Mexico</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/usa/hawaii/maui">Maui, Hawaii, USA</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/morocco/marrakech-safi/marrakech">Marrakech, Morocco</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/indonesia/bali">Bali, Indonesia</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/spain/community-of-madrid/madrid/ibiza">Ibiza, Spain</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/france/provence">Provence, France</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/italy/amalfi-coast">Amalfi Coast, Italy</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/india/rajasthan/jaipur">Jaipur, India</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/turkey/istanbul">Istanbul, Turkey</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/new-zealand/otago/queenstown">Queenstown, New Zealand</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/usa/south-carolina/charleston">Charleston, South Carolina,
+                                USA</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/thailand/phuket">Phuket, Thailand</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/vacation-rentals">View All</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h4 class="footer-menu-title m-0">best hotels and resorts for weddings</h4>
+                    <hr>
+                    <ul class="footer-menu-list weddings p-0">
+                        <li class="ellipsis">
+                            <a href="/property/6-bedroom-accommodation-in-jastrebarsko/HA-6512593675">6 bedroom accommodation - Breznik Plesivicki, Croatia</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/villa-katrin-exquisite-villa-with-60m2-private-pool-parking-and-garden/HA-6116883571">Villa Katrin - South Aegean, Greece</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/acabanes-luxury-villa-with-heated-pool-20-min-bergerac-airport-5m-vigiers-golf/HA-61153641">Acabanes Luxury villa - France</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/charming-country-home-near-scenic-seaside-westport-town/HA-121275231">Charming Country Home - Ireland</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/sheraton-kauai-resort/BC-180683">Sheraton Kauai Resort - Hawaii, USA</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/tyraman-retreat-unique-mountain-getaway-for-large-groups-in-the-hunter-valley/HA-1309097762">Tyraman Retreat - New South Wales, Australia</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/historic-listed-cottage-withconservatory-garden-centre-of-st-andrews-sleeps-6/HA-6118834468">Historic Listed cottage with conservatory &amp; garden - Scotland, United Kingdom</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/villa-estrella-mar-five-star-luxury-staff-private-pool-on-the-beach/HA-321492510">Villa Estrella Mar - Mexico </a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/my-rental-homes-palazzo-doria-luxury-building-in-the-historic-center-of-naples/HA-61411003030">My Rental Homes - Italy </a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/st-lucia-s-best-view-le-gallerie-of-sea-and-sun/HA-3212583513">St. Lucia's Best View -  St. Lucia</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/villa-eden-a-magnificent-oceanfront-villa/HA-121118677">Villa Eden a Magnificent Oceanfront Villa - Cozumel</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/jass-bagh-home-stay-udaipur-i-swimming-pool-i-wedding-i-87oo2o5865/BC-6224448"> Luxurious Architectural Dream Home - North End, Mexico </a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/romeos-ibiza-adults-only/BC-5638372">Romeos Ibiza - Spain</a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/taj-lake-palace-udaipur/BC-74732">Taj Lake Palace Udaipur - Rajasthan , India </a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/property/fushifaru-maldives-50-percent-discount-on-transfers-till-30-sep-2024-on-fb-ai-for-04-nights-or-above/BC-2451546">Fushifaru Maldives - Maldives </a>
+                        </li>
+                        <li class="ellipsis">
+                            <a href="/all/luxury-rentals">View All</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-rest">
+
+                    <div class="footer-socials">
+                        <ul class="footer-social-list no-list-style inline-list m-0 p-0">
+                            <li>
+                                <a href="https://www.facebook.com/perfectforweddings" title="Facebook" target="_blank" rel="noopener" class="footer-social-link">
+                                    <img
+                                        loading="lazy"
+                                        src="./images/fb.png"
+                                        alt="Facebook Icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@perfectforweddings" title="Tiktok" target="_blank" rel="noopener" class="footer-social-link">
+                                    <svg class="icon">
+                                        <use xlink:href="#tiktok-brands"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/perfectforweddings" title="Instagram" target="_blank" rel="noopener" class="footer-social-link">
+                                    <svg class="icon">
+                                        <use xlink:href="#instagram-brands"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-dd flex">
+                        <div class="footer-currency-dd">
+                            <div class="nav-link cursor-pointer custom-currency">
+                                <div id="js-currency-sort" class="js-currency-sort select-wrap" data-currency-country="BD">
+            <ul class="default-option">
+                <li>
+                    <div class="option">
+                        <p>৳ (BDT)</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="select-ul">
+                
+                    <li data-currency-country="US">
+                        <div class="option">
+                            <p>$ (USD)</p>
+                        </div>
+                    </li>
+                
+                    <li data-currency-country="CA">
+                        <div class="option">
+                            <p>$ (CAD)</p>
+                        </div>
+                    </li>
+                
+                    <li data-currency-country="BE">
+                        <div class="option">
+                            <p>€ (EUR)</p>
+                        </div>
+                    </li>
+                
+                    <li data-currency-country="IE">
+                        <div class="option">
+                            <p>£ (GBP)</p>
+                        </div>
+                    </li>
+                
+                    <li data-currency-country="AU">
+                        <div class="option">
+                            <p>$ (AUD)</p>
+                        </div>
+                    </li>
+                
+                    <li data-currency-country="SG">
+                        <div class="option">
+                            <p>$ (SGD)</p>
+                        </div>
+                    </li>
+                
+                    <li data-currency-country="AE">
+                        <div class="option">
+                            <p>د.إ.‏ (AED)</p>
+                        </div>
+                    </li>
+                
+                    <li data-currency-country="BD">
+                        <div class="option">
+                            <p>৳ (BDT)</p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-currency-dd hidden">
+                            <div class="nav-link cursor-pointer custom-currency">
+                                <div class="select-wrap">
+                                    <ul class="default-option">
+                                        <li>
+                                            <div class="option">
+                                                <p>UNITED STATES</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="select-ul">
+                                        <li>
+                                            <div class="option">
+                                                <p>UNITED STATES</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option">
+                                                <p>UNITED STATES</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex powered-block">
+            <a title="Travel AI" aria-label="Travel AI" href="https://www.travelai.com" class="powered-logo" target="_blank">
+                <svg class="icon">
+                    <use xlink:href="#travel_ai"></use>
+                </svg>
+            </a>
+            <div class="powered-text">
+                <div translate="no">Perfect for Weddings</div>
+                <div>Powered by TravelAi</div>
+            </div>
+        </div>
+                    <ul class="footer-site-map no-list-style inline-list m-0 p-0 font-12">
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li>|</li>
+                        <li><a href="/site-terms">Site Terms</a></li>
+                        <li>|</li>
+                        <li><a href="/site-map">Site Map</a></li>
+                    </ul>
+                    <div class="footer-copyright-text">© 2025 <a href="/" title="Perfect for Weddings">
+                            Perfect for Weddings</a>. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mobile-buttons">
+                <button>
+                    <img width="38" height="37" loading="lazy" alt="stay" src="https://static.perfectforweddings.com/release/30.0.2/static/images/sites/casai.com/footer_stay.svg">
+                </button>
+                <button>
+                    <img width="31" height="29" loading="lazy" alt="trip bot" src="https://static.perfectforweddings.com/release/30.0.2/static/images/sites/casai.com/tripbot.svg">
+                </button>
+            </div>
+        </div>
+        <div class="cookie-footer-banner fixed hidden" id="js-cookie-banner">
+            <div class="cookie-footer-banner-content text-white font-11 relative">
+                <div class="cookie-footer-banner-title">
+                    We use cookies. By using our website you agree to our <a id="cookieBannerPrivacyId" href="/privacy-policy#site-cookie-policy">Cookie Policy</a>.
+                </div>
+                <div class="cookie-footer-banner-button">
+                    <button class="absolute text-white font-11 cursor-pointer ellipsis" id="js-cookie-accept">I Agree</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
