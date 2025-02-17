@@ -1429,10 +1429,77 @@ header.scrolling .burger-btn span {
   padding: 15px;
   flex: 1;
 }
-
-.card-description {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: 1.4;
+/****** Our Blog CSS ENDS */
+/****** FAQ CSS STARTS */
+.faq-section{
+  margin-top: 38px;
+  padding-left: 57px;
+  padding-right: 57px;
 }
+.faq-heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq-title{
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.faq-image img{
+
+}
+.faq-container{
+  margin-top: 38px;
+  display: flex;
+  gap: 15px;
+  border-radius: 12px;
+
+}
+.faq-que{
+  box-shadow: 0px 0px 3px 0px #00000040; 
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.faq-que-container{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.faq-que-item{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #959595
+}
+.faq-que-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-family: var(--var-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.faq-que-text,
+.faq-que-ans{
+  font-family: var(--var-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  letter-spacing: 0%;
+}
+.faq-que-text{
+  color: #000000;
+}
+.faq-que-ans{
+  color: #534848;
+}
+/****** FAQ CSS ENDS */
