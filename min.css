@@ -134,21 +134,21 @@ body:has(.menu-cb:checked ~ .nav-links) {
 }
 /****************** Header CSS */
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: all 0.3s linear;
-    z-index: 5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s linear;
+  z-index: 5;
 }
   
 header nav {
-    transition: all 0.3s linear;
-    /*min-height: 150px;*/
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+  transition: all 0.3s linear;
+  /*min-height: 150px;*/
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
   
 nav .logo-wrap {
@@ -157,82 +157,80 @@ nav .logo-wrap {
     //transform: translateX(-50%);*/
 }
 nav .logo-wrap {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    max-width: 246px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 246px;
 }
 header.scrolling {
-    background-color: var(--white);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    color: #000;
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
   
 header.scrolling nav {
-    min-height: 90px;
+  min-height: 90px;
 }
   
 header.scrolling .site_name {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
   
 header.scrolling .menu-items .dropdown-label,
 header.scrolling .menu-items a {
-    color: #000;
+  color: #000;
 }
   
 header.scrolling .burger-btn span {
-    background-color: #000;
+  background-color: #000;
 }
   
 .header-container {
-    max-width: 1920px;
-    width: 100%;
-    height: 79px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1920px;
+  width: 100%;
+  height: 79px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
   
-
 .header_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  position: relative;
 }
   
 .menu-items-search{
-    display: flex;
-    gap: 14px;
+  display: flex;
+  gap: 14px;
 }
 .menu-items {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: end;
-    text-transform: uppercase;
-    gap: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+  text-transform: uppercase;
+  gap: 4px;
 }
 
 .menu-items li{
-    padding: 24px 12px;
+  padding: 24px 12px;
 }
 .search-icon{
-    padding: 24px 12px;
+  padding: 24px 12px;
 }
 .menu-items .dropdown-label,
 .menu-items a {
-    padding-left: 0px;
-    padding-right: 0px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: 0.02em;
-    color: #fff;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #fff;
 }
   
 /****************************************** Hero Section */
@@ -583,9 +581,7 @@ header.scrolling .burger-btn span {
 
 }
 .img-tiles{
-  max-width: 32%; /* Ensures 3 tiles in a row */
   flex: 1;
-  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1133,47 +1129,117 @@ header.scrolling .burger-btn span {
 /****** Top Destinations CSS ENDS */
 
 /****** Places To Go CSS STARTS */
-.placestogo-section{
+.placestogo-section {
   background-image: url('images/placetogo-bg-pic.svg');
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  width: 100%; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   height: 826px;
   margin-top: 40px;
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* Distributes space between children */
+  align-items: center; /* Aligns content vertically */
+  padding: 0 60px; /* Adds padding for spacing */
 }
+
 .img_slider-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, auto);
+  gap: 24px;
+  padding: 15px;
   width: 920px;
   height: 768px;
   border-radius: 12px;
   background: #FFFFFF;
   box-shadow: 0px 2px 4px 0px #00000040;
-  flex-shrink: 0; 
+  position: absolute;
+  top: 100px;
+  flex-shrink: 0;
+}
+.placestogo-img-tiles-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 15px;
+
 }
 .placestogo_desc {
   flex: 1; 
+  max-width: 450px; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  top: 100px;
+  left: 1200px;
+  position: absolute;
+  
 }
-
+.placestogo-heading {
+  margin: 8px;
+}
+.placestogo_title{
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #F9F9F9;
+  
+}
+.placestogo-paragraph{
+  font-family: var(--var-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  letter-spacing: 0%;
+  color: #F9F9F9;
+  text-shadow: 0px 4px 4px 0px #00000040;
+  margin-top: 8px;
+}
+.btn-explore-more {
+  width: 138px;
+  height: 52px;
+  border-radius: 50px;
+  margin-top: 10px;
+  padding-top: 14px;
+  padding-right: 24px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  background: linear-gradient(90deg, rgba(54, 116, 181, 0.9) 0%, rgba(47, 96, 150, 0.9) 100%);
+  box-shadow: 0px 4px 4px 0px #00000073;
+  font-family: var(--var-font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23.8px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
 /****** Places To Go CSS ENDS */
 /****** Best Cities To Visit CSS Starts */
 .bestcities_section {
   width: 100%;
-  margin: 38px;
-  padding: 20px;
+  margin-top: 100px;
+  padding-left: 61px;
+ 
 }
 .bestcities-heading-slidercontrols{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 90%;
 }
 .bestcities_title{
-  font-family: var(--var-font-family);
+  font-family: var(--heading-font-family);
   font-weight: 500;
   font-size: 36px;
   line-height: 52px;
   letter-spacing: 0%;
   text-align: center;
   color: #2C2C2C;
-
 }
 .slidercontrols {
   display: flex;
@@ -1235,4 +1301,138 @@ header.scrolling .burger-btn span {
   margin-top: 11px;
   margin-left: 11px;
   border-width: 1.38px;
+}
+/****** Best Cities To Visit CSS Ends */
+/****** Our Blog CSS STARTS */
+.blog-section {
+  padding-left: 57px;
+  margin-top: 38px;
+}
+
+.blog-header {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+.blog-title {
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #2C2C2C
+}
+
+.viewall-btn {
+  width: 119px;
+  height: 48px;
+  border-radius: 50px;
+  gap: 10px;
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+  background: linear-gradient(90deg, rgba(54, 116, 181, 0.9) 0%, rgba(47, 96, 150, 0.9) 100%);
+  font-family: var(--var-font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23.8px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+.blog-container{
+  display: flex;
+  gap: 24px;
+}
+.featured-post {
+  margin-bottom: 30px;
+  
+}
+.featured-post-img{
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+.featured-post img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.2) 100%);
+  box-shadow: 0px 3px 4px 0px #00000040;
+}
+
+.featured-content {
+  margin-top: 15px;
+}
+.featured-title ,
+.card-content-title {
+  font-family: var(--var-font-family);
+  font-weight: 500;
+  color: #2C2C2C;
+}
+.featured-title {
+  font-size: 24px;
+  line-height: 40.8px;
+}
+.card-content-title {
+  font-size: 20px;
+  line-height: 30px; 
+}
+.featured-description-text,
+.card-content-description-text {
+  font-family: var(--var-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  letter-spacing: 0%;
+  color: #665B5B;
+}
+
+.read-more {
+  font-family: var(--var-font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23.8px;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-offset: auto;
+  text-decoration-thickness: auto;
+  color: #286BB6;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.blog-card {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+}
+.blog-card-img{
+  overflow: hidden;
+  border-radius: 12px;
+}
+.blog-card img {
+  width: 100%;
+  object-fit: cover;
+}
+.card-content {
+  padding: 15px;
+  flex: 1;
+}
+
+.card-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.4;
 }
