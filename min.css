@@ -138,7 +138,7 @@ header {
   top: 0;
   width: 100%;
   transition: all 0.3s linear;
-  z-index: 5;
+  z-index: 500;
 }
   
 header nav {
@@ -557,7 +557,7 @@ header.scrolling .burger-btn span {
   }
 }
 
-/* Add a second copy of images for seamless loop */
+/* second copy of images for seamless loop */
 .carousel::after {
   content: "";
   display: block;
@@ -578,23 +578,23 @@ header.scrolling .burger-btn span {
   align-items: center;
   flex-wrap: wrap; 
   gap: 24px; 
-
 }
 .img-tiles{
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  width: 424px;
+  height: 348px;
 }
 .slider-container {
   position: relative;
-  max-width: 800px;
-  margin: auto;
+  width: 424px;
+  height: 348px;
 }
 .slider-image {
   display: none;
-  width: 100%;
+  width: 424px;
   height: 348px;  
   border-radius: 12px;
 }
@@ -625,14 +625,12 @@ header.scrolling .burger-btn span {
   padding: 10px;
   background: #0000004D;
   box-shadow: 0px 1px 4px 0px #19213D14;
-
 }
 .fav-icon img{
   width: 16px;
   height: 16px;
   top: 10px;
-  left: 10px;
-  
+  left: 10px; 
 }
 /* Slider Navigation Arrows */
 .slider-arrow {
@@ -651,8 +649,6 @@ header.scrolling .burger-btn span {
   transition: 0.3s;
   backdrop-filter: blur(5px);
   background: #0000004D;
-
-
 }
 .slider-arrow::before {
   font-size: 13px; 
@@ -677,37 +673,37 @@ header.scrolling .burger-btn span {
   border-bottom-left-radius: 80px;
 }
 
-.img-name-btn{
+.img-name-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 80%;
-  left: 25%;
+  width: 149px;
+  top: 274px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.3s ease-in-out;
 }
-.img-name{
+
+.img-name {
   font-family: var(--var-font-family);
   font-weight: 500;
-  font-size: 20px;
-  line-height: 34px;
-  letter-spacing: 0%;
+  font-size: 18px;
+  line-height: 30.6px;
   text-align: center;
   color: #FFFFFF;
+  text-shadow: 0px 4px 4px 0px #000000CC;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease-in-out;
 }
-.btn-view-more{
+
+.btn-view-more {
+  opacity: 0;  
   visibility: hidden;
-}
-.slider-container:hover .btn-view-more {
-  visibility: visible;
-  position: absolute;
   width: 115px;
   height: 39px;
-  gap: 10px;
   border-radius: 38px;
-  padding-top: 12px;
-  padding-right: 20px;
-  padding-bottom: 12px;
-  padding-left: 20px;
+  padding: 12px 20px;
   background: linear-gradient(90deg, rgba(54, 116, 181, 0.9) 0%, rgba(47, 96, 150, 0.9) 100%);
   box-shadow: 0px 2px 4px 0px #00000059;
   color: #FFFFFF;
@@ -715,9 +711,23 @@ header.scrolling .burger-btn span {
   font-weight: 500;
   font-size: 14px;
   line-height: 15px;
-  letter-spacing: 0%;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
 }
 
+.slider-container:hover .img-name-btn {
+  top: 217px;
+}
+
+.slider-container:hover .img-name {
+  transform: translateY(-10px); 
+}
+
+.slider-container:hover .btn-view-more {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 10px; 
+}
 /* Dots (Indicators) */
 .slider-controls {
   position: absolute;
@@ -731,7 +741,6 @@ header.scrolling .burger-btn span {
 .slider-dot2 {
   width: 8px;
   height: 8px;
-
   background: #fff;
   border: none;
   border-radius: 50%;
@@ -1223,14 +1232,11 @@ header.scrolling .burger-btn span {
 .bestcities_section {
   width: 100%;
   margin-top: 100px;
-  padding-left: 61px;
- 
 }
 .bestcities-heading-slidercontrols{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
 }
 .bestcities_title{
   font-family: var(--heading-font-family);
@@ -1267,13 +1273,13 @@ header.scrolling .burger-btn span {
   display: flex;
   gap: 24px;
   margin-top: 24px;
+  overflow-x: hidden;
 }
 .city-card{
   display: flex;
   flex-direction: column;
   width: 311px;
-  height: 587px;
-  
+  height: 587px;  
 }
 .city-img img{
   width: 311px;
@@ -1433,6 +1439,7 @@ header.scrolling .burger-btn span {
 /****** FAQ CSS STARTS */
 .faq-section{
   margin-top: 38px;
+  margin-bottom: 38px;
   padding-left: 57px;
   padding-right: 57px;
 }
@@ -1450,8 +1457,14 @@ header.scrolling .burger-btn span {
   letter-spacing: 0%;
   text-align: center;
 }
+.faq-image{
+  flex: 1;  /* Takes up 1 part */
+  max-width: 40%
+}
 .faq-image img{
   object-fit: cover;
+  width: 100%;
+  height: 1005;
 }
 .faq-container{
   margin-top: 38px;
@@ -1461,6 +1474,8 @@ header.scrolling .burger-btn span {
 
 }
 .faq-que{
+  flex: 3;  /* Takes up 3 parts */
+  max-width: 60%;
   box-shadow: 0px 0px 3px 0px #00000040; 
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -1506,11 +1521,12 @@ header.scrolling .burger-btn span {
 /****************************************** Footer CSS STARTS *******************************/
 .footer {
   position: relative;
-  padding: 90px 0;
   height: 100%;
   background-image: url('./images/footer-bg-img.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover; /* Ensures the image covers the entire width */
+  background-position: center; /* Centers the background image */
+  width: 100%;
 }
 .footer-menu-list {
   margin-bottom: 0;
@@ -1535,7 +1551,7 @@ header.scrolling .burger-btn span {
 
 .footer-container {
   display: flex;
-  gap: 28px;
+  gap: 60px;
   padding: 80px 80px 0
 }
 
@@ -1547,10 +1563,6 @@ header.scrolling .burger-btn span {
   letter-spacing: 0%;
   color: #FAFAFA;
 }
-.footer-socials {
-  margin-left: -5px
-}
-
 .footer-socials ul {
   align-items: center;
   display: flex;
@@ -1560,7 +1572,7 @@ header.scrolling .burger-btn span {
 .footer-dd {
   display: flex;
   padding: 28px 0 34px;
-  gap: 0 12px
+  gap: 20px;
 }
 .nav-link, .nav-link:hover {
   color: #fff;
@@ -1570,14 +1582,13 @@ header.scrolling .burger-btn span {
   height: 44px;
   border-radius: 4px;
   display: flex;
-  gap: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 0.8px solid #FFFFFF;
 }
 .select-wrap .default-option li {
   padding: 0 10px;
-  width: 94px;
+  width: 150px;
   height: 24px;
 }
 .select-wrap .option {
@@ -1596,9 +1607,7 @@ header.scrolling .burger-btn span {
   width: 13px;
   height: 8px;
   margin-top: 8px;
-}
-
-  
+}  
 .select-wrap .select-ul {
   border: none;
   margin: 0;
@@ -1690,8 +1699,9 @@ header.scrolling .burger-btn span {
   align-items: center;
   gap: 1rem;
   line-height: 0;
+  margin-top: 25px;
 }
-.powered-text::before {
+.powered-block::before {
   align-self: stretch;
   border-left: 1px solid #fff;
   content: '';
@@ -1731,6 +1741,9 @@ header.scrolling .burger-btn span {
 /****************************************** Partner Logos Section */
 
 .partner_logos_wrapper {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(222, 222, 222);
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgb(222, 222, 222);
