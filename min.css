@@ -758,13 +758,22 @@ header.scrolling .burger-btn span {
   background: var(--primary-color);
 }
 .link_btn {
-  width: 164px;
-  height: 27px;
+  height: 46px;
+  border-radius: 38px;
+  border-width: 1px;
+  padding-top: 11px;
+  padding-right: 24px;
+  padding-bottom: 11px;
+  padding-left: 24px;
+  border: 1px solid #959595;
+  box-shadow: 0px 2px 4px 0px #00000033;
+  background: #FFFFFF;
   font-family: var(--var-font-family);
   font-weight: 400;
-  font-size: 16px;
-  line-height: 27.2px;
+  font-size: 14px;
+  line-height: 23.8px;
   letter-spacing: 0%;
+  color: #2C2C2C;
 }
 .link-arrow {
   width: 16px;
@@ -1135,7 +1144,8 @@ header.scrolling .burger-btn span {
 .browse-all-container {
   align-items: center;
   margin-top: 26px; 
-  margin-left: 1230px;
+  margin-left: 1240px;
+  
 }
 /****** Top Destinations CSS ENDS */
 
@@ -1296,18 +1306,27 @@ header.scrolling .burger-btn span {
   align-items: center;
   justify-content: space-between;
 }
-.link-arrow2{
-  width: 35px;
-  height: 35px;
-  border-radius: 19px;
-  background: #C1D8F2;
+.explore-more-btn{
+  width: 109px;
+  height: 33px;
+  border-radius: 38px;
+  background: linear-gradient(90deg, rgba(54, 116, 181, 0.9) 0%, rgba(47, 96, 150, 0.9) 100%);
+  box-shadow: 0px 2px 4px 0px #00000040;
+  padding-top: 9px;
+  padding-right: 16px;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  display: flex;
 }
-.link-arrow2 img{
-  width: 13px;
-  height: 13px;
-  margin-top: 11px;
-  margin-left: 11px;
-  border-width: 1.38px;
+.explore-more-btn a{
+  font-family: var(--var-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  width: 77px;
+  height: 15px;
 }
 /****** Best Cities To Visit CSS Ends */
 /****** Our Blog CSS STARTS */
@@ -1548,7 +1567,7 @@ header.scrolling .burger-btn span {
 .footer-container {
   display: flex;
   gap: 60px;
-  padding: 80px 80px 0
+  padding: 50px 50px 0;
 }
 
 .footer-menu-title {
