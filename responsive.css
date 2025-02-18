@@ -1,0 +1,238 @@
+/* Responsive CSS */
+
+@media (max-width: 1700px) {
+    .partner_logos li img {
+      width: 100px;
+      object-fit: contain;
+    }
+  }
+  
+  @media (max-width: 1499px) {
+    .partner_logos li img {
+      width: 85px;
+    }
+    .presto-container,
+    .header-container {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .browse-all-container {
+      margin-left: 1030px;
+    }
+    .placestogo_desc {
+      left: 1000px;  
+    }
+    
+  }
+  
+  @media (max-width: 1199px) {
+    .menu-items {
+      display: none;
+    }
+    nav .logo-wrap {
+      position: relative;
+    }
+    .partner_logos {
+      gap: 0;
+    }
+    .partner_logos li {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 10px;
+      margin-left: 0px;
+    }
+    .features_content {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .features_desc {
+      max-width: 100%;
+    }
+    .footer_middle_links .item a {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    header nav {
+      min-height: 130px;
+    }
+    .hero_heading {
+      font-size: 45px;
+    }
+    .trending_stays_asset,
+    .featured_properties {
+      flex-direction: column;
+    }
+    .featured_property_image {
+      height: 560px;
+    }
+    .featured_property_image img {
+      height: inherit;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      padding-top: 65px;
+    }
+    .pc-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .presto-container,
+    .header-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .header_wrapper {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    nav .logo-wrap {
+      left: unset;
+      transform: unset;
+    }
+    .partner_logos li {
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+    .partner_logos {
+      justify-content: unset;
+    }
+    .features_images {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+      scroll-snap-type: x mandatory;
+      gap: 0;
+      touch-action: pan-x pinch-zoom;
+      -webkit-overflow-scrolling: touch;
+    }
+    .features_image {
+      flex: 0 0 100%;
+      min-width: 100%;
+      scroll-snap-align: center;
+      transform: translateX(0);
+      transition: transform 0.3s ease;
+    }
+    .car_dots {
+      display: flex;
+    }
+    .accordion {
+      flex-direction: column;
+    }
+    .footer_bottom {
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+    }
+    .footer_bottom .footer_info {
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    header nav {
+      min-height: 110px;
+    }
+    .logo-wrap img {
+      width: 50px;
+      height: auto;
+    }
+    .site_name {
+      font-size: 30px;
+      line-height: 26px;
+      width: min-content;
+    }
+    .pc-container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .presto-container,
+    .header-container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .accordion_section,
+    .quote_section,
+    .features_section {
+      padding: 60px 0;
+    }
+  
+    .trending_stays_section,
+    .featured_stays_section,
+    .tab_tiles_section {
+      padding-top: 60px;
+    }
+  
+    .about_section {
+      padding-bottom: 60px;
+    }
+  
+    .hero_heading,
+    .accordion_heading,
+    .trending_stays_heading,
+    .featured_stays_heading,
+    .tab_heading,
+    .features_heading,
+    .about_heading {
+      font-size: 34px;
+      line-height: 40px;
+    }
+    .tab_heading {
+      padding-top: 0;
+    }
+  
+    .features_content {
+      gap: 20px;
+    }
+    .quote_desc {
+      font-size: 26px;
+      line-height: 42px;
+    }
+    .footer_top_links {
+      justify-content: center;
+    }
+    .footer_middle_links {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .footer_middle_links .item {
+      align-items: center;
+    }
+    .powered_by img {
+      width: 160px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav .logo-wrap {
+      gap: 10px;
+    }
+    .features_list {
+      margin-bottom: 20px;
+    }
+    .footer {
+      padding: 60px 0;
+    }
+    .footer_bottom .powered_by {
+      gap: 15px;
+    }
+    .footer_top_links {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer_bottom_links {
+      gap: 10px;
+    }
+  }

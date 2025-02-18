@@ -165,6 +165,10 @@ nav .logo-wrap {
 header.scrolling {
   background-color: var(--white);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  img{
+    filter: brightness(0%);
+  }
 }
   
 header.scrolling nav {
@@ -461,29 +465,30 @@ header.scrolling .burger-btn span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 48px;
 }
-.about_section-row1
-{
-    margin: 10px;
-    text-align: center;
+.about_section-container{
+  margin-top: 38px;
 }
+.about_section-row1,
 .about_section-row2,
 .about_section-row3{
-   margin: 48px;
-   text-align: center;
+  text-align: center;
+}
+.about_section-row2{
+  margin-top: 96px;
 }
 .about_section-row3{
+  margin-top: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .about_section-row1-heading,
 .about_section-row2-heading{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .about_section-row1-heading{
   gap: 32px;
@@ -492,17 +497,17 @@ header.scrolling .burger-btn span {
   gap: 8px;
 }
 .about_section-row1-heading img{
-    width: 93px;
-    height: 35px;
+  width: 93px;
+  height: 35px;
 }
 .about_heading{
-    font-family: var(--heading-font-family);
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 52px;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #2C2C2C;
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #2C2C2C;
 }
 .about_desc{
     font-family: var(--var-font-family);
@@ -571,16 +576,13 @@ header.scrolling .burger-btn span {
 
 /******* Img Tiles CSS*/
 .img-tiles-container{
-  margin-top: 38px;
-  margin-bottom: 38px;
+  margin-top: 24px;
   display: flex;
-  justify-content: space-between; 
+  justify-content: center; 
   align-items: center;
-  flex-wrap: wrap; 
   gap: 24px; 
 }
 .img-tiles{
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1147,9 +1149,9 @@ header.scrolling .burger-btn span {
   margin-top: 40px;
   position: relative;
   display: flex;
-  justify-content: space-between; /* Distributes space between children */
-  align-items: center; /* Aligns content vertically */
-  padding: 0 60px; /* Adds padding for spacing */
+  justify-content: space-between; 
+  align-items: center; 
+
 }
 
 .img_slider-container {
@@ -1264,7 +1266,6 @@ header.scrolling .burger-btn span {
   justify-content: center;
 }
 
-
 .slider-btn svg {
   width: 24px;
   height: 24px;
@@ -1311,13 +1312,11 @@ header.scrolling .burger-btn span {
 /****** Best Cities To Visit CSS Ends */
 /****** Our Blog CSS STARTS */
 .blog-section {
-  padding-left: 57px;
   margin-top: 38px;
 }
 
 .blog-header {
   display: flex;
-  width: 90%;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 38px;
@@ -1440,8 +1439,6 @@ header.scrolling .burger-btn span {
 .faq-section{
   margin-top: 38px;
   margin-bottom: 38px;
-  padding-left: 57px;
-  padding-right: 57px;
 }
 .faq-heading{
   display: flex;
@@ -1458,23 +1455,22 @@ header.scrolling .burger-btn span {
   text-align: center;
 }
 .faq-image{
-  flex: 1;  /* Takes up 1 part */
-  max-width: 40%
+  flex: 1;  
+  max-width: 40%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  overflow: hidden;
 }
 .faq-image img{
-  object-fit: cover;
   width: 100%;
-  height: 1005;
 }
 .faq-container{
   margin-top: 38px;
   display: flex;
   gap: 15px;
-  border-radius: 12px;
-
 }
 .faq-que{
-  flex: 3;  /* Takes up 3 parts */
+  flex: 3;
   max-width: 60%;
   box-shadow: 0px 0px 3px 0px #00000040; 
   border-top-right-radius: 12px;
@@ -1628,7 +1624,6 @@ header.scrolling .burger-btn span {
   display: flex;
   gap: 10px;
   position: relative;
- 
 }
 .email-input {
   width: 420px;
@@ -1701,10 +1696,10 @@ header.scrolling .burger-btn span {
   line-height: 0;
   margin-top: 25px;
 }
-.powered-block::before {
-  align-self: stretch;
-  border-left: 1px solid #fff;
-  content: '';
+.powered-block hr {
+  border-color: rgb(161, 191, 204);
+  border-left-width: 1px;
+  height: 45px;
 }
 .powered-text {
   color: #fff;
@@ -1739,7 +1734,9 @@ header.scrolling .burger-btn span {
 }
 
 /****************************************** Partner Logos Section */
-
+.partner_logos-container{
+  padding: 20px 0;
+}
 .partner_logos_wrapper {
   border-top-width: 1px;
   border-top-style: solid;
@@ -1748,7 +1745,6 @@ header.scrolling .burger-btn span {
   border-bottom-style: solid;
   border-bottom-color: rgb(222, 222, 222);
 }
-
 .partner_logos {
   display: flex;
   align-items: center;
@@ -1758,7 +1754,6 @@ header.scrolling .burger-btn span {
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .partner_logos li:first-child {
   padding-left: 0px;
 }
