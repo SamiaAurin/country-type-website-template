@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /**************     Image Tiles With Slider , PreviousNext Arrow & Dots CSS STARTS ***********/
+            .img-tiles{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+            .tiles-icons {
+            top: 0;
+            right: 0;
+            height: 35px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: row-reverse;
+            margin: 8px 8px;
+            position: absolute;
+            border: 0.8px solid white;
+            border-radius: 50%;
+            padding: 10px;
+            background: #0000004D;
+            box-shadow: 0px 1px 4px 0px #19213D14;
+            }
+            .fav-icon img{
+            width: 16px;
+            height: 16px;
+            top: 10px;
+            left: 10px; 
+            }
+            .slider-container {
+            position: relative;
+            width: 424px;
+            height: 348px;
+            }
+            .slider-image {
+            display: none;
+            width: 424px;
+            height: 348px;  
+            border-radius: 12px;
+            }
+            .slider-image:first-child {
+            display: block;
+            }
+            /* Dots (Indicators) */
+            .slider-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            }
+            .slider-dot2 {
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+            }
+            .slider-dot2.active {
+            background: var(--primary-color);
+            }
+            /* Slider Navigation Arrows */
+            .slider-arrows-container {
+            position: absolute;
+            top: 142px; 
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between; 
+            }
+            .slider-arrow {
+            position: absolute;
+            top: 5%;
+            transform: translateY(-50%);
+            width: 32px;
+            height: 42.67px;
+            color: #FFFFFF;
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            user-select: none;
+            transition: 0.3s;
+            backdrop-filter: blur(5px);
+            background: #0000004D;
+            }
+            .slider-arrow svg{
+            width: 26px;
+            height: 52px;
+            }
+            .slider-left {
+            left: 0;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            }
+            .slider-right {
+            right: 0;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
+            }
+            .img-name-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            width: 149px;
+            top: 274px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: top 0.3s ease-in-out;
+            }
+            .img-name {
+            font-family: var(--var-font-family);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30.6px;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px 0px #000000CC;
+            margin-bottom: 8px;
+            transition: transform 0.3s ease-in-out;
+            }
+            .btn-view-more {
+            opacity: 0;  
+            visibility: hidden;
+            width: 115px;
+            height: 39px;
+            border-radius: 38px;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, rgba(54, 116, 181, 0.9) 0%, rgba(47, 96, 150, 0.9) 100%);
+            box-shadow: 0px 2px 4px 0px #00000059;
+            color: #FFFFFF;
+            font-family: var(--var-font-family);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 15px;
+            text-align: center;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s;
+            }
+            /* Hover CSS */
+            .slider-container:hover .img-name-btn {
+            top: 217px;
+            }
+            .slider-container:hover .img-name {
+            transform: translateY(-10px); 
+            }
+            .slider-container:hover .btn-view-more {
+            opacity: 1;
+            visibility: visible;
+            margin-top: 10px; 
+            }
+            /**************     Image Tiles With Slider , PreviousNext Arrow & Dots CSS ENDS ***********/ 
+    </style>
+</head>
+<body>
+    <div class="img-tiles">
+        <div class="slider-container">
+          <img class="slider-image" src="./images/rhinevalley.png" >
+          <img class="slider-image" src="./images/rhinevalley.png" >
+          <img class="slider-image" src="./images/rhinevalley.png" >
+          <div class="tiles-icons">                         
+            <div class="fav-icon " title="Bookmark">
+              <img src="./images/heart.svg" alt="">
+            </div>  
+          </div>   
+          <div class="slider-arrows-container">
+            <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
+              <svg viewBox="0 0 24 24">
+                <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="slider-arrow slider-right" onclick="changeSlide(1)">
+              <svg viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="img-name-btn">
+            <span class="img-name">The Rhine Valley</span>
+            <button class="btn-view-more">View More</button>
+          </div>
+          <div class="slider-controls">
+            <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
+            <span class="slider-dot2" onclick="currentSlide(2)"></span>
+            <span class="slider-dot2" onclick="currentSlide(3)"></span>
+            <span class="slider-dot2" onclick="currentSlide(4)"></span>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

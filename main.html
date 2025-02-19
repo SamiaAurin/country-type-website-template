@@ -103,8 +103,8 @@
               <h1 id="hero_heading" class="hero_heading">
                 Discover New Destinations,</br>Create Lasting Memories
               </h1>
-              <div class="hero-btn-explore">
-                 <a href="/" class="btn-explore">Explore Destinations</a>
+              <div class="component_wrapper" style="color: white;">
+                <p class="ins_text">Add here Property Search Component</p>
               </div>
             </div>
             <div class="slider-dot-container">
@@ -112,9 +112,11 @@
                 <span class="slider-dot active" onclick="currentDiv(2)"></span>
                 <span class="slider-dot" onclick="currentDiv(3)"></span>
             </div>
+            <div class="wave-divider"></div>
         </section>
+        
         <!-- Hero Section Ends -->
-
+        
         <!-- About Section Starts --> 
         <section id="about_section" class="about_section">
             <div class="presto-container about_section-container">
@@ -153,7 +155,7 @@
                     </p>
                   </div>
                   <div class="img-tiles-container">
-                    <div class="img-tiles">
+                    <div class="img-tiles things-todo-img-tiles">
                       <div class="slider-container">
                         <img class="slider-image" src="./images/rhinevalley.png" >
                         <img class="slider-image" src="./images/rhinevalley.png" >
@@ -164,8 +166,16 @@
                           </div>  
                         </div>   
                         <div class="slider-arrows-container">
-                          <div class="slider-arrow slider-left" onclick="changeSlide(-1)">&#10094;</div>
-                          <div class="slider-arrow slider-right" onclick="changeSlide(1)">&#10095;</div>
+                          <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                          <div class="slider-arrow slider-right" onclick="changeSlide(1)">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
                         </div>
                         <div class="img-name-btn">
                           <span class="img-name">The Rhine Valley</span>
@@ -180,7 +190,7 @@
                       </div>
                     </div>
                     <!-- Second One-->
-                    <div class="img-tiles">
+                    <div class="img-tiles things-todo-img-tiles">
                       <div class="slider-container">
                         <img class="slider-image" src="./images/rhinevalley.png" >
                         <img class="slider-image" src="./images/rhinevalley.png" >
@@ -191,15 +201,23 @@
                           </div>  
                         </div>   
                         <div class="slider-arrows-container">
-                          <div class="slider-arrow slider-left" onclick="changeSlide(-1)">&#10094;</div>
-                          <div class="slider-arrow slider-right" onclick="changeSlide(1)">&#10095;</div>
+                          <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                          <div class="slider-arrow slider-right" onclick="changeSlide(1)">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
                         </div>
                         <div class="img-name-btn">
                           <span class="img-name">The Rhine Valley</span>
                           <button class="btn-view-more">View More</button>
                         </div>
                         <div class="slider-controls">
-                          <span class="slider-dot2" onclick="currentSlide(1)"></span>
+                          <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
                           <span class="slider-dot2" onclick="currentSlide(2)"></span>
                           <span class="slider-dot2" onclick="currentSlide(3)"></span>
                           <span class="slider-dot2" onclick="currentSlide(4)"></span>
@@ -207,7 +225,7 @@
                       </div>
                     </div>
                     <!-- Third One-->
-                    <div class="img-tiles">
+                    <div class="img-tiles things-todo-img-tiles">
                       <div class="slider-container">
                         <img class="slider-image" src="./images/rhinevalley.png" >
                         <img class="slider-image" src="./images/rhinevalley.png" >
@@ -218,26 +236,31 @@
                           </div>  
                         </div>   
                         <div class="slider-arrows-container">
-                          <div class="slider-arrow slider-left" onclick="changeSlide(-1)">&#10094;</div>
-                          <div class="slider-arrow slider-right" onclick="changeSlide(1)">&#10095;</div>
+                          <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                          <div class="slider-arrow slider-right" onclick="changeSlide(1)">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
                         </div>
                         <div class="img-name-btn">
                           <span class="img-name">The Rhine Valley</span>
                           <button class="btn-view-more">View More</button>
                         </div>
                         <div class="slider-controls">
-                          <span class="slider-dot2" onclick="currentSlide(1)"></span>
+                          <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
                           <span class="slider-dot2" onclick="currentSlide(2)"></span>
                           <span class="slider-dot2" onclick="currentSlide(3)"></span>
                           <span class="slider-dot2" onclick="currentSlide(4)"></span>
                         </div>
                       </div>
                     </div>
-                  </div> 
-
-                  <!-- Second Row of Img-tiles-container-->
-                  <div class="img-tiles-container">
-                    <div class="img-tiles">
+                    <!-- Fourth One-->
+                    <div class="img-tiles things-todo-img-tiles">
                       <div class="slider-container">
                         <img class="slider-image" src="./images/rhinevalley.png" >
                         <img class="slider-image" src="./images/rhinevalley.png" >
@@ -248,23 +271,31 @@
                           </div>  
                         </div>   
                         <div class="slider-arrows-container">
-                          <div class="slider-arrow slider-left" onclick="changeSlide(-1)">&#10094;</div>
-                          <div class="slider-arrow slider-right" onclick="changeSlide(1)">&#10095;</div>
+                          <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                          <div class="slider-arrow slider-right" onclick="changeSlide(1)">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
                         </div>
                         <div class="img-name-btn">
                           <span class="img-name">The Rhine Valley</span>
                           <button class="btn-view-more">View More</button>
                         </div>
                         <div class="slider-controls">
-                          <span class="slider-dot2" onclick="currentSlide(1)"></span>
+                          <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
                           <span class="slider-dot2" onclick="currentSlide(2)"></span>
                           <span class="slider-dot2" onclick="currentSlide(3)"></span>
                           <span class="slider-dot2" onclick="currentSlide(4)"></span>
                         </div>
                       </div>
                     </div>
-                    <!-- Second One-->
-                    <div class="img-tiles">
+                    <!-- Fifth One-->
+                    <div class="img-tiles things-todo-img-tiles">
                       <div class="slider-container">
                         <img class="slider-image" src="./images/rhinevalley.png" >
                         <img class="slider-image" src="./images/rhinevalley.png" >
@@ -275,23 +306,31 @@
                           </div>  
                         </div>   
                         <div class="slider-arrows-container">
-                          <div class="slider-arrow slider-left" onclick="changeSlide(-1)">&#10094;</div>
-                          <div class="slider-arrow slider-right" onclick="changeSlide(1)">&#10095;</div>
+                          <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                          <div class="slider-arrow slider-right" onclick="changeSlide(1)">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
                         </div>
                         <div class="img-name-btn">
                           <span class="img-name">The Rhine Valley</span>
                           <button class="btn-view-more">View More</button>
                         </div>
                         <div class="slider-controls">
-                          <span class="slider-dot2" onclick="currentSlide(1)"></span>
+                          <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
                           <span class="slider-dot2" onclick="currentSlide(2)"></span>
                           <span class="slider-dot2" onclick="currentSlide(3)"></span>
                           <span class="slider-dot2" onclick="currentSlide(4)"></span>
                         </div>
                       </div>
                     </div>
-                    <!-- Third One-->
-                    <div class="img-tiles">
+                    <!-- Sixth One-->
+                    <div class="img-tiles things-todo-img-tiles">
                       <div class="slider-container">
                         <img class="slider-image" src="./images/rhinevalley.png" >
                         <img class="slider-image" src="./images/rhinevalley.png" >
@@ -302,15 +341,23 @@
                           </div>  
                         </div>   
                         <div class="slider-arrows-container">
-                          <div class="slider-arrow slider-left" onclick="changeSlide(-1)">&#10094;</div>
-                          <div class="slider-arrow slider-right" onclick="changeSlide(1)">&#10095;</div>
+                          <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                          <div class="slider-arrow slider-right" onclick="changeSlide(1)">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
                         </div>
                         <div class="img-name-btn">
                           <span class="img-name">The Rhine Valley</span>
                           <button class="btn-view-more">View More</button>
                         </div>
                         <div class="slider-controls">
-                          <span class="slider-dot2" onclick="currentSlide(1)"></span>
+                          <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
                           <span class="slider-dot2" onclick="currentSlide(2)"></span>
                           <span class="slider-dot2" onclick="currentSlide(3)"></span>
                           <span class="slider-dot2" onclick="currentSlide(4)"></span>
@@ -318,7 +365,6 @@
                       </div>
                     </div>
                   </div>
-
                </div>
                <div class="about_section-row3">
                 <a
@@ -351,297 +397,59 @@
                    </p>
                  </div>
                  <div class="top_destinations_col1-imgslider">
-                  <div class="top_destinations_slider-container">
-                    <div class="top_destinations_slider">
-                      <div class="slide active">
-                        <img src="./images/lake.jpeg" alt="Lake Constance">
-                        <div class="slide-title">Lake Constance</div>
+                  <div class="img-tiles top_destinations_slider-container">
+                    <div class="slider-container top_destinations_slider">
+                      <img class="slider-image" src="./images/lake.jpeg" >
+                      <img class="slider-image" src="./images/rhinevalley.png" >
+                      <img class="slider-image" src="./images/rhinevalley.png" >
+                         
+                      <div class="slider-arrows-container">
+                        <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
+                          <svg viewBox="0 0 24 24">
+                            <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                        <div class="slider-arrow slider-right" onclick="changeSlide(1)">
+                          <svg viewBox="0 0 24 24">
+                            <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
                       </div>
-                      <div class="slide">
-                        <img src="./images/lake.jpeg" alt="Mountain View">
-                        <div class="slide-title">Mountain View</div>
+                      <div class="img-name-btn">
+                        <span class="img-name">Lake Constance</span>
+                        <button class="btn-view-more" style="display: none;">View More</button>
                       </div>
-                      <div class="slide">
-                        <img src="./images/lake.jpeg" alt="Forest Trail">
-                        <div class="slide-title">Forest Trail</div>
+                      <div class="slider-controls">
+                        <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
+                        <span class="slider-dot2" onclick="currentSlide(2)"></span>
+                        <span class="slider-dot2" onclick="currentSlide(3)"></span>
+                        <span class="slider-dot2" onclick="currentSlide(4)"></span>
                       </div>
-                      <div class="slide">
-                        <img src="./images/lake.jpeg" alt="Valley View">
-                        <div class="slide-title">Valley View</div>
-                      </div>
-                    </div>
-                    <div class="slider_control-container">
-                      <button class="slider-button prev">&#x276E;</button>
-                      <div class="dots-container">
-                        <span class="slider-dot2 active"></span>
-                        <span class="slider-dot2"></span>
-                        <span class="slider-dot2"></span>
-                        <span class="slider-dot2"></span>
-                      </div>
-                      <button class="slider-button next">&#x276F;</button>
                     </div>
                   </div>
                  </div>
               </div>
               <div class="top_destinations_col2">
-                <!-- 1st Property Tiles -->
-                <div class="property-tiles">
-                  <div class="tiles-icon">
-                      <div class="fav-icon " title="Bookmark">
-                        <img src="./images/heart.svg" alt="">
-                      </div> 
+                <div class="property-tiles-container">
+                  <div class="component_wrapper">
+                    <p class="ins_text">Add here Property Tiles Component</p>
                   </div>
-                  <div class="tiles-img">
-                      <img src="./images/property1.jpeg" alt="property-images">
-                        <span class="listing-price">
-                          <span class="price-info">From $12,216</span>
-                       </span>
-                       <div class="property-tiles_dots-container">
-                          <span class="slider-dot2 active"></span>
-                          <span class="slider-dot2"></span>
-                          <span class="slider-dot2"></span>
-                          <span class="slider-dot2"></span>
-                       </div>
+                  <div class="component_wrapper">
+                    <p class="ins_text">Add here Property Tiles Component</p>
                   </div>
-                  <div class="tiles-details">
-                      <div class="info">
-                          <div class="rating-review">
-                              <div class="rating">
-                                &#9733; &#9733; &#9733;
-                              </div>
-                              <span class="divider"> | </span>
-                              <div class="review">
-                                  <img class="like-img"  src="./images/like 3.svg" alt="like image">
-                                  <span class="rating-num">8.0</span>
-                                  <span class="review-num">(4 Reviews)</span>
-                              </div>
-                          </div>
-                          <span class="property-type">Villa</span>
-                      </div>
-                      <div class="title">
-                          <a href="">Luxury Loft Lorem Ipsum</a>
-                      </div>
-                      <div class="amenities">
-                          <ul class="amenities-list">
-                              <li>Air Conditioner</li>
-                              <li>Bedding/Linens</li>
-                          </ul>
-                      </div>
-                      <div class="property-address-info">
-                        <a href="">
-                          <img src="./images/location.svg" alt="location-pointer-image">
-                          <span class="property-address">2238 Stradella Rd, SF</span>
-                        </a>
-                      </div>
-                      <div class="tiles-btn">
-                          <div class="website-btn">
-                              <a href="">
-                                  <img src="https://static.rentbyowner.com/release/28.0.6/static/images/booking.svg" alt="Booking.com">
-                              </a>
-                          </div>
-                          <div class="availability-btn">
-                              <div class="view-availability">
-                                  <a href="">Reserve</a>
-                              </div>
-                          </div>
-                      </div>
+                  <div class="component_wrapper">
+                    <p class="ins_text">Add here Property Tiles Component</p>
+                  </div>
+                  <div class="component_wrapper">
+                    <p class="ins_text">Add here Property Tiles Component</p>
                   </div>
                 </div>
-                <!-- 2nd Property Tiles -->
-                <div class="property-tiles">
-                  <div class="tiles-icon">
-                      <div class="fav-icon " title="Bookmark">
-                        <img src="./images/heart.svg" alt="">
-                      </div> 
-                  </div>
-                  <div class="tiles-img">
-                      <img src="./images/property1.jpeg" alt="property-images">
-                        <span class="listing-price">
-                          <span class="price-info">From $12,216</span>
-                       </span>
-                       <div class="property-tiles_dots-container">
-                          <span class="slider-dot2 active"></span>
-                          <span class="slider-dot2"></span>
-                          <span class="slider-dot2"></span>
-                          <span class="slider-dot2"></span>
-                       </div>
-                  </div>
-                  <div class="tiles-details">
-                      <div class="info">
-                          <div class="rating-review">
-                              <div class="rating">
-                                &#9733; &#9733; &#9733;
-                              </div>
-                              <span class="divider"> | </span>
-                              <div class="review">
-                                  <img class="like-img"  src="./images/like 3.svg" alt="like image">
-                                  <span class="rating-num">8.0</span>
-                                  <span class="review-num">(4 Reviews)</span>
-                              </div>
-                          </div>
-                          <span class="property-type">Villa</span>
-                      </div>
-                      <div class="title">
-                          <a href="">Luxury Loft Lorem Ipsum</a>
-                      </div>
-                      <div class="amenities">
-                          <ul class="amenities-list">
-                              <li>Air Conditioner</li>
-                              <li>Bedding/Linens</li>
-                          </ul>
-                      </div>
-                      <div class="property-address-info">
-                        <a href="">
-                          <img src="./images/location.svg" alt="location-pointer-image">
-                          <span class="property-address">2238 Stradella Rd, SF</span>
-                        </a>
-                      </div>
-                      <div class="tiles-btn">
-                          <div class="website-btn">
-                              <a href="">
-                                  <img src="https://static.rentbyowner.com/release/28.0.6/static/images/booking.svg" alt="Booking.com">
-                              </a>
-                          </div>
-                          <div class="availability-btn">
-                              <div class="view-availability">
-                                  <a href="">Reserve</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                <!-- 3rd Property Tiles -->
-                <div class="property-tiles">
-                  <div class="tiles-icon">
-                      <div class="fav-icon " title="Bookmark">
-                        <img src="./images/heart.svg" alt="">
-                      </div> 
-                  </div>
-                  <div class="tiles-img">
-                      <img src="./images/property1.jpeg" alt="property-images">
-                        <span class="listing-price">
-                          <span class="price-info">From $12,216</span>
-                       </span>
-                       <div class="property-tiles_dots-container">
-                          <span class="slider-dot2 active"></span>
-                          <span class="slider-dot2"></span>
-                          <span class="slider-dot2"></span>
-                          <span class="slider-dot2"></span>
-                       </div>
-                  </div>
-                  <div class="tiles-details">
-                      <div class="info">
-                          <div class="rating-review">
-                              <div class="rating">
-                                &#9733; &#9733; &#9733;
-                              </div>
-                              <span class="divider"> | </span>
-                              <div class="review">
-                                  <img class="like-img"  src="./images/like 3.svg" alt="like image">
-                                  <span class="rating-num">8.0</span>
-                                  <span class="review-num">(4 Reviews)</span>
-                              </div>
-                          </div>
-                          <span class="property-type">Villa</span>
-                      </div>
-                      <div class="title">
-                          <a href="">Luxury Loft Lorem Ipsum</a>
-                      </div>
-                      <div class="amenities">
-                          <ul class="amenities-list">
-                              <li>Air Conditioner</li>
-                              <li>Bedding/Linens</li>
-                          </ul>
-                      </div>
-                      <div class="property-address-info">
-                        <a href="">
-                          <img src="./images/location.svg" alt="location-pointer-image">
-                          <span class="property-address">2238 Stradella Rd, SF</span>
-                        </a>
-                      </div>
-                      <div class="tiles-btn">
-                          <div class="website-btn">
-                              <a href="">
-                                  <img src="https://static.rentbyowner.com/release/28.0.6/static/images/booking.svg" alt="Booking.com">
-                              </a>
-                          </div>
-                          <div class="availability-btn">
-                              <div class="view-availability">
-                                  <a href="">Reserve</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                <!-- 4th Property Tiles -->
-                <div class="property-tiles">
-                  <div class="tiles-icon">
-                      <div class="fav-icon " title="Bookmark">
-                        <img src="./images/heart.svg" alt="">
-                      </div> 
-                  </div>
-                  <div class="tiles-img">
-                      <img src="./images/property1.jpeg" alt="property-images">
-                        <span class="listing-price">
-                          <span class="price-info">From $12,216</span>
-                       </span>
-                       <div class="property-tiles_dots-container">
-                          <span class="slider-dot2 active"></span>
-                          <span class="slider-dot2"></span>
-                          <span class="slider-dot2"></span>
-                          <span class="slider-dot2"></span>
-                       </div>
-                  </div>
-                  <div class="tiles-details">
-                      <div class="info">
-                          <div class="rating-review">
-                              <div class="rating">
-                                &#9733; &#9733; &#9733;
-                              </div>
-                              <span class="divider"> | </span>
-                              <div class="review">
-                                  <img class="like-img"  src="./images/like 3.svg" alt="like image">
-                                  <span class="rating-num">8.0</span>
-                                  <span class="review-num">(4 Reviews)</span>
-                              </div>
-                          </div>
-                          <span class="property-type">Villa</span>
-                      </div>
-                      <div class="title">
-                          <a href="">Luxury Loft Lorem Ipsum</a>
-                      </div>
-                      <div class="amenities">
-                          <ul class="amenities-list">
-                              <li>Air Conditioner</li>
-                              <li>Bedding/Linens</li>
-                          </ul>
-                      </div>
-                      <div class="property-address-info">
-                        <a href="">
-                          <img src="./images/location.svg" alt="location-pointer-image">
-                          <span class="property-address">2238 Stradella Rd, SF</span>
-                        </a>
-                      </div>
-                      <div class="tiles-btn">
-                          <div class="website-btn">
-                              <a href="">
-                                  <img src="https://static.rentbyowner.com/release/28.0.6/static/images/booking.svg" alt="Booking.com">
-                              </a>
-                          </div>
-                          <div class="availability-btn">
-                              <div class="view-availability">
-                                  <a href="">Reserve</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                <div class="browse-all-container">
+                  <a href="" rel="" target="_blank" title="BROWSE ALL DESTINATIONS" class="link_btn">
+                      Browse All Properties
+                  </a>
                 </div>
               </div>
-          </div>
-          <div class="browse-all-container">
-            <a href="" rel="" target="_blank" title="BROWSE ALL DESTINATIONS" class="link_btn">
-                Browse All Properties
-            </a>
           </div>
         </section>
         <!-- Top Destinations Ends -->
@@ -661,15 +469,23 @@
                     </div>  
                   </div>   
                   <div class="slider-arrows-container">
-                    <div class="slider-arrow slider-left" onclick="changeSlide(-1)">&#10094;</div>
-                    <div class="slider-arrow slider-right" onclick="changeSlide(1)">&#10095;</div>
+                    <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="slider-arrow slider-right" onclick="changeSlide(1)">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
                   </div>
                   <div class="img-name-btn">
                     <span class="img-name">The Rhine Valley</span>
                     <button class="btn-view-more">View More</button>
                   </div>
                   <div class="slider-controls">
-                    <span class="slider-dot2" onclick="currentSlide(1)"></span>
+                    <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
                     <span class="slider-dot2" onclick="currentSlide(2)"></span>
                     <span class="slider-dot2" onclick="currentSlide(3)"></span>
                     <span class="slider-dot2" onclick="currentSlide(4)"></span>
@@ -687,15 +503,23 @@
                     </div>  
                   </div>   
                   <div class="slider-arrows-container">
-                    <div class="slider-arrow slider-left" onclick="changeSlide(-1)">&#10094;</div>
-                    <div class="slider-arrow slider-right" onclick="changeSlide(1)">&#10095;</div>
+                    <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="slider-arrow slider-right" onclick="changeSlide(1)">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
                   </div>
                   <div class="img-name-btn">
                     <span class="img-name">The Rhine Valley</span>
                     <button class="btn-view-more">View More</button>
                   </div>
                   <div class="slider-controls">
-                    <span class="slider-dot2" onclick="currentSlide(1)"></span>
+                    <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
                     <span class="slider-dot2" onclick="currentSlide(2)"></span>
                     <span class="slider-dot2" onclick="currentSlide(3)"></span>
                     <span class="slider-dot2" onclick="currentSlide(4)"></span>
@@ -713,15 +537,23 @@
                     </div>  
                   </div>   
                   <div class="slider-arrows-container">
-                    <div class="slider-arrow slider-left" onclick="changeSlide(-1)">&#10094;</div>
-                    <div class="slider-arrow slider-right" onclick="changeSlide(1)">&#10095;</div>
+                    <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="slider-arrow slider-right" onclick="changeSlide(1)">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
                   </div>
                   <div class="img-name-btn">
                     <span class="img-name">The Rhine Valley</span>
                     <button class="btn-view-more">View More</button>
                   </div>
                   <div class="slider-controls">
-                    <span class="slider-dot2" onclick="currentSlide(1)"></span>
+                    <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
                     <span class="slider-dot2" onclick="currentSlide(2)"></span>
                     <span class="slider-dot2" onclick="currentSlide(3)"></span>
                     <span class="slider-dot2" onclick="currentSlide(4)"></span>
@@ -739,15 +571,23 @@
                     </div>  
                   </div>   
                   <div class="slider-arrows-container">
-                    <div class="slider-arrow slider-left" onclick="changeSlide(-1)">&#10094;</div>
-                    <div class="slider-arrow slider-right" onclick="changeSlide(1)">&#10095;</div>
+                    <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="slider-arrow slider-right" onclick="changeSlide(1)">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
                   </div>
                   <div class="img-name-btn">
                     <span class="img-name">The Rhine Valley</span>
                     <button class="btn-view-more">View More</button>
                   </div>
                   <div class="slider-controls">
-                    <span class="slider-dot2" onclick="currentSlide(1)"></span>
+                    <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
                     <span class="slider-dot2" onclick="currentSlide(2)"></span>
                     <span class="slider-dot2" onclick="currentSlide(3)"></span>
                     <span class="slider-dot2" onclick="currentSlide(4)"></span>
@@ -776,13 +616,42 @@
           </div>
         </section>
         <!-- Places To Go Ends --> 
-         
-        <!-- Best Places Starts -->
-        <section class="bestcities_section">
+
+        <!-- Property Feed Starts-->
+        <section id="tab_tiles_section" class="tab_tiles_section">
           <div class="presto-container">
-            <div class="bestcities-heading-slidercontrols">
-              <div class="bestcities-heading">
-                <h2 id="bestcities_title" class="bestcities_title">Best cities to visit</h2>
+            <h3 id="tab_heading" class="tab_heading">
+              Property Feed
+            </h3>
+            <p id="tab_sub_heading" class="tab_sub_heading">
+              The Property Feed section typically provides a comprehensive list of available properties, showcasing their
+              key details and offering potential buyers or tenants an easy way to explore various options. It includes
+              essential information such as property type, location, price, size, and amenities. 
+            </p>
+  
+            <div class="component_wrapper">
+              <p class="ins_text">Add here Tab View Component</p>
+            </div>
+  
+            <a
+              href=""
+              rel=""
+              target="_blank"
+              alt="VIEW ALL PROPERTIES"
+              title="VIEW ALL PROPERTIES"
+              class="link_btn"
+              >View All Properties</a
+            >
+          </div>
+        </section> 
+        <!-- Property Feed Ends-->
+
+        <!-- Others Cities to visit Starts -->
+        <section class="othercities_section">
+          <div class="presto-container">
+            <div class="othercities-heading-slidercontrols">
+              <div class="othercities-heading">
+                <h2 id="othercities_title" class="othercities_title">Other cities to visit</h2>
                 <div class="underline"></div>
               </div>
               <div class="slidercontrols">
@@ -798,7 +667,7 @@
                   </button>
               </div>
             </div>
-            <div class="bestcities-card-container">
+            <div class="othercities-card-container">
               <!-- City Card 1 -->
               <div class="city-card">
                   <div class="city-img">
@@ -864,7 +733,7 @@
             </div>
           </div>
         </section>
-        <!-- Best Places Ends -->
+        <!-- Others Cities to visit Ends -->
 
         <!-- Our Blog Starts -->
         <section class="blog-section">
@@ -886,13 +755,13 @@
                 <div class="featured-content">
                   <h3 class="featured-title">Wanderlust Chronicles: Your Ultimate Travel Guide</h3>
                   <div class="featured-description">
-                    <span class="featured-description-text">
+                    <p class="featured-description-text">
                       Transform your living room into a serene retreat and an inviting space for 
-                      guests with our expert tips on designing a cozy & stylish environment
-                    </span>
-                    <span class="read-more">
-                      Read more
-                    </span>
+                      guests with our expert tips on designing a cozy & stylish environment 
+                    </p>
+                    <a href="" class="read-more">
+                      Read More
+                    </a>
                   </div>
                 </div>
               </div>
@@ -904,13 +773,12 @@
                     <div class="card-content">
                       <h3 class="card-content-title">The Roaming Diaries: Adventures and Escapes Worldwide</h3>
                       <div class="card-content-description">
-                        <span class="card-content-description-text">
-                          Transform your living room into a serene retreat and an inviting space for 
-                          guests with our expert tips on designing a cozy & stylish environment
-                        </span>
-                        <span class="read-more">
-                          Read more
-                        </span>
+                        <p class="card-content-description-text">
+                          Infuse energy into your home with a bold yellow armchair, and let our expert tips guide you in adding color and personality
+                        </p>
+                        <a href="" class="read-more">
+                          Read More
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -921,12 +789,12 @@
                     <div class="card-content">
                       <h3 class="card-content-title">The Explorer's Path: Travel Tips, Guides, and Stories</h3>
                       <div class="card-content-description">
-                        <span class="card-content-description-text">
+                        <p class="card-content-description-text">
                           Take a virtual tour of a stunning modern home, inside and out, and experience the sleek style and innovative features for yourself
-                        </span>
-                        <span class="read-more">
-                          Read more
-                        </span>
+                        </p>
+                        <a href="" class="read-more">
+                          Read More
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -937,12 +805,12 @@
                     <div class="card-content">
                       <h3 class="card-content-title">The Travel Map: Guide to Your Next Big Adventure</h3>
                       <div class="card-content-description">
-                        <span class="card-content-description-text">
+                        <p class="card-content-description-text">
                           Embark on a virtual journey through a beautiful modern home, exploring both its interior and exterior, and discover the cutting-edge design
-                        </span>
-                        <span class="read-more">
-                          Read more
-                        </span>
+                        </p>
+                        <a href="" class="read-more">
+                          Read More
+                        </a>
                       </div>
                     </div>
                   </div>

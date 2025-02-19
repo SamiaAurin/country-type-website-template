@@ -17,7 +17,7 @@
       padding-right: 30px;
     }
     .browse-all-container {
-      margin-left: 1010px;
+     
     }
     .placestogo_desc {
       left: 1000px;  
@@ -54,6 +54,26 @@
     .footer_middle_links .item a {
       font-size: 12px;
       font-weight: 600;
+    }
+    .footer-container{
+      flex-direction: column;
+    }
+    .email-form {
+      width: 365px;
+    }
+    .subscribe {
+      left: 210px;
+    }
+    .img-tiles-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto); 
+    }
+    .placestogo-section{
+      height: auto;
+    }
+    .img_slider-container, .placestogo_desc{
+      position: unset;
     }
   }
   
@@ -138,6 +158,46 @@
     }
     .footer_bottom .footer_info {
       align-items: center;
+    }
+    .img-tiles-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .top_destinations-container {
+      flex-direction: column;
+    }
+    .top_destinations_section {
+      height: auto;
+    }
+    .placestogo-section {
+      height: 2000px;
+  }
+    .img_slider-container {
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+      height: 1500px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px 0px;
+      position: absolute;
+      top: 400px;
+      flex-shrink: 0;
+      gap: 24px;
+      padding: 15px;
+      border-radius: 12px;
+      background: rgb(255, 255, 255);
+    }
+    .placestogo_desc {
+      position: absolute;
+      top: 0px;
+      left: 200px;
+    }
+    .blog-container {
+      flex-direction: column;
+    }
+    .top_destinations_slider-container .img-name-btn {
+      top: 674px;
+      width: 226px;
+      height: 48px;
     }
   }
   
