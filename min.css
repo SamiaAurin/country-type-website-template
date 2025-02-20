@@ -280,7 +280,7 @@ body:has(.menu-cb:checked ~ .nav-links) {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  width: 149px;
+  width: 226px;
   top: 274px;
   left: 50%;
   transform: translateX(-50%);
@@ -935,7 +935,7 @@ header.scrolling .burger-btn span {
 
 /********* Top Destinations */
 .top_destinations_section {
-  background-image: url('images/zigzag-bg-pic.png');
+  background-image: url('images/topdestinations-bg-pic.webp');
   background-size: cover; 
   background-repeat: no-repeat; 
   width: 100%; 
@@ -1077,14 +1077,12 @@ header.scrolling .burger-btn span {
 .browse-all-container {
   align-items: center;
   margin-top: 26px; 
-
-  
 }
 /****** Top Destinations CSS ENDS */
 
 /****** Places To Go CSS STARTS */
 .placestogo-section {
-  background-image: url('images/placetogo-bg-pic.svg');
+  background-image: url('images/placestogo-bg-img.webp');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -1255,7 +1253,6 @@ header.scrolling .burger-btn span {
   height: 540px;
   border-radius: 12px;
 }
-
 .city-info{
   display: flex;
   width: 311px;
@@ -1263,6 +1260,14 @@ header.scrolling .burger-btn span {
   margin-top: 12px;
   align-items: center;
   justify-content: space-between;
+}
+.othercity-name{
+  font-family: var(--var-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27.2px;
+  letter-spacing: 0%;
+  color: #2C2C2C;
 }
 .explore-more-btn{
   width: 109px;
@@ -1323,7 +1328,8 @@ header.scrolling .burger-btn span {
   color: #FFFFFF;
 }
 .blog-container{
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
   gap: 24px;
 }
 .featured-post {
@@ -1409,7 +1415,9 @@ header.scrolling .burger-btn span {
 }
 
 .blog-card {
-  display: flex;
+  display: grid;
+  height: 168.3800048828125px;
+  grid-template-columns: 30% 70%;
   gap: 20px;
   background: #fff;
 }
@@ -1418,6 +1426,7 @@ header.scrolling .burger-btn span {
   border-radius: 12px;
 }
 .blog-card img {
+  height: 168.38px;
   width: 100%;
   object-fit: cover;
 }
