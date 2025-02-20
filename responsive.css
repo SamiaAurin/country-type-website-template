@@ -16,13 +16,9 @@
       padding-left: 30px;
       padding-right: 30px;
     }
-    .browse-all-container {
-     
-    }
     .placestogo_desc {
       left: 1000px;  
     }
-    
   }
   
   @media (max-width: 1199px) {
@@ -62,7 +58,7 @@
       width: 365px;
     }
     .subscribe {
-      left: 210px;
+      left: 215px;
     }
     .img-tiles-container {
       display: grid;
@@ -74,6 +70,7 @@
     }
     .img_slider-container, .placestogo_desc{
       position: unset;
+      width: unset;
     }
   }
   
@@ -171,25 +168,22 @@
     }
     .placestogo-section {
       height: 2000px;
-  }
+    }
+    .placestogo-container{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
     .img_slider-container {
       display: flex;
       flex-direction: column;
-      width: 450px;
       height: 1500px;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px 0px;
-      position: absolute;
-      top: 400px;
-      flex-shrink: 0;
-      gap: 24px;
-      padding: 15px;
-      border-radius: 12px;
-      background: rgb(255, 255, 255);
+      position: unset;
     }
     .placestogo_desc {
-      position: absolute;
-      top: 0px;
-      left: 200px;
+      position: unset;
+      margin-bottom: 20px;
     }
     .blog-container {
       flex-direction: column;
@@ -273,9 +267,36 @@
     .powered_by img {
       width: 160px;
     }
+    .top_destinations-container {
+      display: block;
+    }
+    .placestogo_desc {
+      left: 120px;
+    }
+   .img_slider-container{
+    left: 80px;
+   }
+   .top_destinations_slider {
+    width: 100%;
+   }
+   .faq-container{
+    display: block;
+   }
+   .faq-image,
+   .faq-que{
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+   }
   }
   
   @media (max-width: 480px) {
+    section {
+      padding-top: 50px;
+      padding-right: 0rem;
+      padding-bottom: 50px;
+      padding-left: 0rem;
+    }
     nav .logo-wrap {
       gap: 10px;
     }
@@ -295,4 +316,30 @@
     .footer_bottom_links {
       gap: 10px;
     }
+    .footer-dd {
+      display: block;
+      padding: 28px 0 34px;
+    }
+    .footer-currency-dd{
+      margin-bottom: 15px;
+    }
+    .placestogo_desc {
+      left: 50px;
+    }
+    .img_slider-container{
+      left: 11.5px;
+    }
+    .email-form {
+      display: grid;
+      width: 100%;
+      position: unset;
+    }
+    .email-input{
+      width: 100%;
+    }
+    .subscribe {
+      position: relative;
+      left: 0;
+    }
   }
+  

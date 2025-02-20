@@ -32,6 +32,28 @@
                     <img src="./images/search-icon.png"/>
                 </span>
           </div>
+
+          <input id="menu-cb" type="checkbox" class="menu-cb" style="display: none;"/>
+          <label for="menu-cb" class="burger-btn"  style="display: none;">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <ul class="nav-links" id="nav-link-items" style="display: none;">
+            <li><a class="">Home</a></li>
+            <li><a class="">About Us</a></li>
+            <li><a class="">Contact Us</a></li>
+            <li class="dd-menu">
+              <input id="dd-cb-1" type="checkbox" class="dd-cb" />
+              <label for="dd-cb-1" class="dropdown-label"> More </label>
+              <ul class="dropdown-content">
+                <li><a class="">Dropdown Item 1</a></li>
+                <li><a class="">Dropdown Item 2</a></li>
+                <li><a class="">Dropdown Item 3</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -122,9 +144,13 @@
             <div class="presto-container about_section-container">
                <div class="about_section-row1">
                   <div class="about_section-row1-heading">
-                     <img src="./images/3star-logo.png" />
+                     <img 
+                       src="./images/3star-logo.png" 
+                       alt="3star Logo"
+                      />
                      <h2 id="about_heading" class="about_heading">
-                        Embark on the adventure of a lifetime by exploring the</br> world's most breathtaking destinations </h2>
+                        Embark on the adventure of a lifetime by exploring the</br> world's most breathtaking destinations
+                      </h2>
                      <p id="about_desc" class="about_desc">
                         Whether you're a seasoned globetrotter or a first-time adventurer, we’re here to inspire, guide, and accompany you on your journey.</br> 
                         From hidden gems and off-the-beaten-path destinations to helpful travel tips and stories from the road, our blog is packed</br> 
@@ -155,14 +181,31 @@
                     </p>
                   </div>
                   <div class="img-tiles-container">
+                    <!-- First One -->
                     <div class="img-tiles things-todo-img-tiles">
                       <div class="slider-container">
-                        <img class="slider-image" src="./images/rhinevalley.png" >
-                        <img class="slider-image" src="./images/rhinevalley.png" >
-                        <img class="slider-image" src="./images/rhinevalley.png" >
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        
                         <div class="tiles-icons">                         
                           <div class="fav-icon " title="Bookmark">
-                            <img src="./images/heart.svg" alt="">
+                            <img 
+                             src="./images/heart.svg" 
+                             alt="Bookmark"
+                            />
                           </div>  
                         </div>   
                         <div class="slider-arrows-container">
@@ -177,8 +220,8 @@
                             </svg>
                           </div>
                         </div>
-                        <div class="img-name-btn">
-                          <span class="img-name">The Rhine Valley</span>
+                        <div class="city-name-btn">
+                          <span class="city-name">The Rhine Valley</span>
                           <button class="btn-view-more">View More</button>
                         </div>
                         <div class="slider-controls">
@@ -189,15 +232,31 @@
                         </div>
                       </div>
                     </div>
-                    <!-- Second One-->
+                    <!-- Second One -->
                     <div class="img-tiles things-todo-img-tiles">
                       <div class="slider-container">
-                        <img class="slider-image" src="./images/rhinevalley.png" >
-                        <img class="slider-image" src="./images/rhinevalley.png" >
-                        <img class="slider-image" src="./images/rhinevalley.png" >
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        
                         <div class="tiles-icons">                         
                           <div class="fav-icon " title="Bookmark">
-                            <img src="./images/heart.svg" alt="">
+                            <img 
+                             src="./images/heart.svg" 
+                             alt="Bookmark"
+                            />
                           </div>  
                         </div>   
                         <div class="slider-arrows-container">
@@ -212,27 +271,43 @@
                             </svg>
                           </div>
                         </div>
-                        <div class="img-name-btn">
-                          <span class="img-name">The Rhine Valley</span>
+                        <div class="city-name-btn">
+                          <span class="city-name">The Rhine Valley</span>
                           <button class="btn-view-more">View More</button>
                         </div>
                         <div class="slider-controls">
-                          <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(2)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(3)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(4)"></span>
+                            <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(2)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(3)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(4)"></span>
                         </div>
                       </div>
                     </div>
-                    <!-- Third One-->
+                    <!-- Third One -->
                     <div class="img-tiles things-todo-img-tiles">
                       <div class="slider-container">
-                        <img class="slider-image" src="./images/rhinevalley.png" >
-                        <img class="slider-image" src="./images/rhinevalley.png" >
-                        <img class="slider-image" src="./images/rhinevalley.png" >
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        
                         <div class="tiles-icons">                         
                           <div class="fav-icon " title="Bookmark">
-                            <img src="./images/heart.svg" alt="">
+                            <img 
+                             src="./images/heart.svg" 
+                             alt="Bookmark"
+                            />
                           </div>  
                         </div>   
                         <div class="slider-arrows-container">
@@ -247,27 +322,43 @@
                             </svg>
                           </div>
                         </div>
-                        <div class="img-name-btn">
-                          <span class="img-name">The Rhine Valley</span>
+                        <div class="city-name-btn">
+                          <span class="city-name">The Rhine Valley</span>
                           <button class="btn-view-more">View More</button>
                         </div>
                         <div class="slider-controls">
-                          <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(2)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(3)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(4)"></span>
+                            <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(2)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(3)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(4)"></span>
                         </div>
                       </div>
                     </div>
-                    <!-- Fourth One-->
+                    <!-- Fourth One -->
                     <div class="img-tiles things-todo-img-tiles">
                       <div class="slider-container">
-                        <img class="slider-image" src="./images/rhinevalley.png" >
-                        <img class="slider-image" src="./images/rhinevalley.png" >
-                        <img class="slider-image" src="./images/rhinevalley.png" >
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        
                         <div class="tiles-icons">                         
                           <div class="fav-icon " title="Bookmark">
-                            <img src="./images/heart.svg" alt="">
+                            <img 
+                             src="./images/heart.svg" 
+                             alt="Bookmark"
+                            />
                           </div>  
                         </div>   
                         <div class="slider-arrows-container">
@@ -282,27 +373,43 @@
                             </svg>
                           </div>
                         </div>
-                        <div class="img-name-btn">
-                          <span class="img-name">The Rhine Valley</span>
+                        <div class="city-name-btn">
+                          <span class="city-name">The Rhine Valley</span>
                           <button class="btn-view-more">View More</button>
                         </div>
                         <div class="slider-controls">
-                          <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(2)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(3)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(4)"></span>
+                            <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(2)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(3)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(4)"></span>
                         </div>
                       </div>
                     </div>
-                    <!-- Fifth One-->
+                    <!-- Fifth One -->
                     <div class="img-tiles things-todo-img-tiles">
                       <div class="slider-container">
-                        <img class="slider-image" src="./images/rhinevalley.png" >
-                        <img class="slider-image" src="./images/rhinevalley.png" >
-                        <img class="slider-image" src="./images/rhinevalley.png" >
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        
                         <div class="tiles-icons">                         
                           <div class="fav-icon " title="Bookmark">
-                            <img src="./images/heart.svg" alt="">
+                            <img 
+                             src="./images/heart.svg" 
+                             alt="Bookmark"
+                            />
                           </div>  
                         </div>   
                         <div class="slider-arrows-container">
@@ -317,27 +424,43 @@
                             </svg>
                           </div>
                         </div>
-                        <div class="img-name-btn">
-                          <span class="img-name">The Rhine Valley</span>
+                        <div class="city-name-btn">
+                          <span class="city-name">The Rhine Valley</span>
                           <button class="btn-view-more">View More</button>
                         </div>
                         <div class="slider-controls">
-                          <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(2)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(3)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(4)"></span>
+                            <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(2)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(3)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(4)"></span>
                         </div>
                       </div>
                     </div>
-                    <!-- Sixth One-->
+                    <!-- Sixth One -->
                     <div class="img-tiles things-todo-img-tiles">
                       <div class="slider-container">
-                        <img class="slider-image" src="./images/rhinevalley.png" >
-                        <img class="slider-image" src="./images/rhinevalley.png" >
-                        <img class="slider-image" src="./images/rhinevalley.png" >
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        <img 
+                         class="slider-image" 
+                         src="./images/rhinevalley.png" 
+                         alt="The Rhine Valley"
+                        />
+                        
                         <div class="tiles-icons">                         
                           <div class="fav-icon " title="Bookmark">
-                            <img src="./images/heart.svg" alt="">
+                            <img 
+                             src="./images/heart.svg" 
+                             alt="Bookmark"
+                            />
                           </div>  
                         </div>   
                         <div class="slider-arrows-container">
@@ -352,15 +475,15 @@
                             </svg>
                           </div>
                         </div>
-                        <div class="img-name-btn">
-                          <span class="img-name">The Rhine Valley</span>
+                        <div class="city-name-btn">
+                          <span class="city-name">The Rhine Valley</span>
                           <button class="btn-view-more">View More</button>
                         </div>
                         <div class="slider-controls">
-                          <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(2)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(3)"></span>
-                          <span class="slider-dot2" onclick="currentSlide(4)"></span>
+                            <span class="slider-dot2 active" onclick="currentSlide(1)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(2)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(3)"></span>
+                            <span class="slider-dot2" onclick="currentSlide(4)"></span>
                         </div>
                       </div>
                     </div>
@@ -399,10 +522,21 @@
                  <div class="top_destinations_col1-imgslider">
                   <div class="img-tiles top_destinations_slider-container">
                     <div class="slider-container top_destinations_slider">
-                      <img class="slider-image" src="./images/lake.jpeg" >
-                      <img class="slider-image" src="./images/rhinevalley.png" >
-                      <img class="slider-image" src="./images/rhinevalley.png" >
-                         
+                      <img 
+                       class="slider-image" 
+                       src="./images/lake.jpeg" 
+                       alt="Lake Constance"
+                      />
+                      <img 
+                       class="slider-image" 
+                       src="./images/lake.jpeg" 
+                       alt="Lake Constance"
+                      />
+                      <img 
+                       class="slider-image" 
+                       src="./images/lake.jpeg" 
+                       alt="Lake Constance"
+                      />
                       <div class="slider-arrows-container">
                         <div class="slider-arrow slider-left" onclick="changeSlide(-1)">
                           <svg viewBox="0 0 24 24">
@@ -415,8 +549,8 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="img-name-btn">
-                        <span class="img-name">Lake Constance</span>
+                      <div class="city-name-btn">
+                        <span class="city-name">Lake Constance</span>
                         <button class="btn-view-more" style="display: none;">View More</button>
                       </div>
                       <div class="slider-controls">
@@ -456,16 +590,31 @@
 
         <!-- Places To Go Starts --> 
         <section class="placestogo-section">
-          <div class="presto-container">
+          <div class="presto-container placestogo-container">
             <div class="img_slider-container">
               <div class="img-tiles">
                 <div class="slider-container">
-                  <img class="slider-image" src="./images/rhinevalley.png" >
-                  <img class="slider-image" src="./images/rhinevalley.png" >
-                  <img class="slider-image" src="./images/rhinevalley.png" >
+                  <img 
+                   class="slider-image" 
+                   src="./images/rhinevalley.png" 
+                   alt="The Rhine Valley" 
+                  />
+                  <img 
+                   class="slider-image" 
+                   src="./images/rhinevalley.png" 
+                   alt="The Rhine Valley" 
+                  />
+                  <img 
+                   class="slider-image" 
+                   src="./images/rhinevalley.png" 
+                   alt="The Rhine Valley" 
+                  />
                   <div class="tiles-icons">                         
                     <div class="fav-icon " title="Bookmark">
-                      <img src="./images/heart.svg" alt="">
+                      <img 
+                       src="./images/heart.svg" 
+                       alt="Bookmark"
+                      />
                     </div>  
                   </div>   
                   <div class="slider-arrows-container">
@@ -480,8 +629,8 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="img-name-btn">
-                    <span class="img-name">The Rhine Valley</span>
+                  <div class="city-name-btn">
+                    <span class="city-name">The Rhine Valley</span>
                     <button class="btn-view-more">View More</button>
                   </div>
                   <div class="slider-controls">
@@ -494,12 +643,27 @@
               </div>
               <div class="img-tiles">
                 <div class="slider-container">
-                  <img class="slider-image" src="./images/rhinevalley.png" >
-                  <img class="slider-image" src="./images/rhinevalley.png" >
-                  <img class="slider-image" src="./images/rhinevalley.png" >
+                  <img 
+                   class="slider-image" 
+                   src="./images/rhinevalley.png" 
+                   alt="The Rhine Valley" 
+                  />
+                  <img 
+                   class="slider-image" 
+                   src="./images/rhinevalley.png" 
+                   alt="The Rhine Valley" 
+                  />
+                  <img 
+                   class="slider-image" 
+                   src="./images/rhinevalley.png" 
+                   alt="The Rhine Valley" 
+                  />
                   <div class="tiles-icons">                         
                     <div class="fav-icon " title="Bookmark">
-                      <img src="./images/heart.svg" alt="">
+                      <img 
+                       src="./images/heart.svg" 
+                       alt="Bookmark"
+                      />
                     </div>  
                   </div>   
                   <div class="slider-arrows-container">
@@ -514,8 +678,8 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="img-name-btn">
-                    <span class="img-name">The Rhine Valley</span>
+                  <div class="city-name-btn">
+                    <span class="city-name">The Rhine Valley</span>
                     <button class="btn-view-more">View More</button>
                   </div>
                   <div class="slider-controls">
@@ -528,12 +692,27 @@
               </div>
               <div class="img-tiles">
                 <div class="slider-container">
-                  <img class="slider-image" src="./images/rhinevalley.png" >
-                  <img class="slider-image" src="./images/rhinevalley.png" >
-                  <img class="slider-image" src="./images/rhinevalley.png" >
+                  <img 
+                   class="slider-image" 
+                   src="./images/rhinevalley.png" 
+                   alt="The Rhine Valley" 
+                  />
+                  <img 
+                   class="slider-image" 
+                   src="./images/rhinevalley.png" 
+                   alt="The Rhine Valley" 
+                  />
+                  <img 
+                   class="slider-image" 
+                   src="./images/rhinevalley.png" 
+                   alt="The Rhine Valley" 
+                  />
                   <div class="tiles-icons">                         
                     <div class="fav-icon " title="Bookmark">
-                      <img src="./images/heart.svg" alt="">
+                      <img 
+                       src="./images/heart.svg" 
+                       alt="Bookmark"
+                      />
                     </div>  
                   </div>   
                   <div class="slider-arrows-container">
@@ -548,8 +727,8 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="img-name-btn">
-                    <span class="img-name">The Rhine Valley</span>
+                  <div class="city-name-btn">
+                    <span class="city-name">The Rhine Valley</span>
                     <button class="btn-view-more">View More</button>
                   </div>
                   <div class="slider-controls">
@@ -562,12 +741,27 @@
               </div>
               <div class="img-tiles">
                 <div class="slider-container">
-                  <img class="slider-image" src="./images/rhinevalley.png" >
-                  <img class="slider-image" src="./images/rhinevalley.png" >
-                  <img class="slider-image" src="./images/rhinevalley.png" >
+                  <img 
+                   class="slider-image" 
+                   src="./images/rhinevalley.png" 
+                   alt="The Rhine Valley" 
+                  />
+                  <img 
+                   class="slider-image" 
+                   src="./images/rhinevalley.png" 
+                   alt="The Rhine Valley" 
+                  />
+                  <img 
+                   class="slider-image" 
+                   src="./images/rhinevalley.png" 
+                   alt="The Rhine Valley" 
+                  />
                   <div class="tiles-icons">                         
                     <div class="fav-icon " title="Bookmark">
-                      <img src="./images/heart.svg" alt="">
+                      <img 
+                       src="./images/heart.svg" 
+                       alt="Bookmark"
+                      />
                     </div>  
                   </div>   
                   <div class="slider-arrows-container">
@@ -582,8 +776,8 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="img-name-btn">
-                    <span class="img-name">The Rhine Valley</span>
+                  <div class="city-name-btn">
+                    <span class="city-name">The Rhine Valley</span>
                     <button class="btn-view-more">View More</button>
                   </div>
                   <div class="slider-controls">
@@ -594,7 +788,7 @@
                   </div>
                 </div>
               </div>
-           </div>
+            </div>
            <div class="placestogo_desc">
               <div class="placestogo-heading">
                 <h2 id="placestogo_title" class="placestogo_title">Places to go</h2>

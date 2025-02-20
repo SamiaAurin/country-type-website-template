@@ -201,12 +201,12 @@ body:has(.menu-cb:checked ~ .nav-links) {
 }
 .slider-container {
   position: relative;
-  width: 424px;
+  width: 100%;
   height: 348px;
 }
 .slider-image {
   display: none;
-  width: 424px;
+  width: 100%;
   height: 348px;  
   border-radius: 12px;
 }
@@ -275,7 +275,7 @@ body:has(.menu-cb:checked ~ .nav-links) {
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
 }
-.img-name-btn {
+.city-name-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -286,7 +286,7 @@ body:has(.menu-cb:checked ~ .nav-links) {
   transform: translateX(-50%);
   transition: top 0.3s ease-in-out;
 }
-.img-name {
+.city-name {
   font-family: var(--var-font-family);
   font-weight: 500;
   font-size: 18px;
@@ -315,10 +315,10 @@ body:has(.menu-cb:checked ~ .nav-links) {
   transition: opacity 0.3s ease-in-out, visibility 0.3s;
 }
 /* Hover CSS */
-.slider-container:hover .img-name-btn {
+.slider-container:hover .city-name-btn {
   top: 217px;
 }
-.slider-container:hover .img-name {
+.slider-container:hover .city-name {
   transform: translateY(-10px); 
 }
 .slider-container:hover .btn-view-more {
@@ -431,6 +431,174 @@ header.scrolling .burger-btn span {
   letter-spacing: 0.02em;
   color: #fff;
 }
+/* Hamburger Menu */
+
+.burger-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  cursor: pointer;
+  position: relative;
+  width: 60px;
+  height: 24px;
+  z-index: 11;
+}
+
+.burger-btn span {
+  display: block;
+  background-color: var(--white);
+  height: 2px;
+  width: 60px;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.dd-cb,
+.menu-cb {
+  display: none;
+}
+
+.nav-links {
+  max-width: 420px;
+  width: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: left;
+  transform: translateX(420px);
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth easing */
+  z-index: 9;
+  padding-top: 124px;
+  background-color: var(--secondary-color);
+  overflow: auto;
+}
+
+.dd-menu,
+.nav-links li:not(.dropdown-content li) {
+  display: block;
+  color: #fff;
+  margin: 28px 0;
+  display: block;
+  white-space: nowrap;
+  position: relative;
+  z-index: 0;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s linear 0s;
+  padding: 0 35px;
+}
+
+.nav-links li a {
+  display: block;
+  cursor: pointer;
+}
+
+.dd-menu {
+  padding: 0;
+  position: relative;
+}
+
+.menu-cb:checked ~ .nav-links {
+  transform: translateX(0);
+}
+
+/* Position the spans */
+.burger-btn span:nth-child(1) {
+  top: 0;
+}
+
+.burger-btn span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-btn span:nth-child(3) {
+  bottom: 0;
+}
+
+/* Animation for the burger to cross transform */
+.menu-cb:checked ~ .burger-btn span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.menu-cb:checked ~ .burger-btn span {
+  background-color: #fff;
+}
+
+.menu-cb:checked ~ .burger-btn span:nth-child(2) {
+  opacity: 0;
+  display: none;
+}
+
+.menu-cb:checked ~ .burger-btn span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+/* Dropdown Menu*/
+
+.dd-menu .dropdown-label {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  position: relative;
+  text-wrap: auto;
+  width: 100%;
+  display: block;
+  padding-right: 20px;
+}
+
+.dd-menu .dropdown-content {
+  display: none;
+  opacity: 0;
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 15px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.dd-cb:checked ~ .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown-content li {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+}
+
+.dropdown-content li a {
+  padding: 5px 10px;
+}
+
+.dropdown-content li a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-label::after {
+  content: "+";
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  font-weight: 400;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease, content 0.3s ease;
+}
+
+.dd-cb:checked + .dropdown-label::after {
+  content: "-";
+  transform: translateY(-50%) rotate(180deg);
+}
+
 /****************************************** Hero Section */
 .hero_section {
   height: 860px;
@@ -546,7 +714,6 @@ header.scrolling .burger-btn span {
     margin: 0 auto;
 }
 
-
 /* Slider Dot Container CSS */
 .slider-dot-container {
   display: flex;
@@ -648,9 +815,6 @@ header.scrolling .burger-btn span {
   align-items: center;
   justify-content: center;
 }
-.about_section-container{
-  margin-top: 38px;
-}
 .about_section-row1,
 .about_section-row2,
 .about_section-row3{
@@ -706,7 +870,7 @@ header.scrolling .burger-btn span {
   height: auto;
   overflow: hidden;
   position: relative;
-  margin: 24px;
+  margin: 24px 0 0 0; 
 }
 .carousel {
   display: flex;
@@ -757,12 +921,13 @@ header.scrolling .burger-btn span {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   grid-template-rows: repeat(2, auto);
+  column-gap: 24px;
   row-gap: 24px;
   place-items: center;
 }
 
 .things-todo-img-tiles{
-  width: 424px;
+  width: 100%;
   height: 348px;
 }
 
@@ -785,12 +950,12 @@ header.scrolling .burger-btn span {
 .top_destinations_slider-container .slider-arrows-container{
   top: 412px;
 }
-.top_destinations_slider-container .img-name-btn{
+.top_destinations_slider-container .city-name-btn{
   top: 674px;
   width: 226px;
   height: 48px;
 }
-.top_destinations_slider-container .img-name{
+.top_destinations_slider-container .city-name{
   font-family: var(--var-font-family);
   font-weight: 500;
   font-size: 28px;
@@ -846,13 +1011,13 @@ header.scrolling .burger-btn span {
 }
 .top_destinations_slider{
   position: relative;
-  width: 623px;
+  width: 100%;
   height: 765px;
 }
 
 .top_destinations_slider-container img{
   position: absolute;
-  width: 623px;
+  width: 100%;
   height: 765px;
 }
 
@@ -861,7 +1026,7 @@ header.scrolling .burger-btn span {
 }
 
 .slide img {
-  width: 623px;
+  width: 100%;
   height: 765px;
   object-fit: cover;
 }
@@ -1121,7 +1286,7 @@ header.scrolling .burger-btn span {
   width: 77px;
   height: 15px;
 }
-/****** Best Cities To Visit CSS Ends */
+/****** Other Cities To Visit CSS Ends */
 /****** Our Blog CSS STARTS */
 .blog-header {
   display: flex;
@@ -1277,6 +1442,7 @@ header.scrolling .burger-btn span {
   text-align: center;
 }
 .faq-image{
+  display: flex;
   flex: 1;  
   max-width: 40%;
   border-top-left-radius: 12px;
@@ -1285,6 +1451,7 @@ header.scrolling .burger-btn span {
 }
 .faq-image img{
   width: 100%;
+  object-fit: cover;
 }
 .faq-container{
   margin-top: 38px;
